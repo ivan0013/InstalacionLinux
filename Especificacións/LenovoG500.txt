@@ -1,0 +1,3096 @@
+---------------------------------	Lenovo G500	---------------------------------
+
+
+----------------------	dmesg	----------------------
+
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.11.0-12-generic (buildd@allspice) (gcc version 4.8.1 (Ubuntu/Linaro 4.8.1-10ubuntu7) ) #19-Ubuntu SMP Wed Oct 9 16:20:46 UTC 2013 (Ubuntu 3.11.0-12.19-generic 3.11.3)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-3.11.0-12-generic root=UUID=0a897b95-97ff-4b23-9c2d-c78d2963e2b5 ro quiet splash vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x0000000000087fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000088000-0x00000000000bffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000001fffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000020000000-0x00000000201fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000020200000-0x0000000040003fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000040004000-0x0000000040004fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000040005000-0x00000000c5fecfff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000c5fed000-0x00000000c6d6dfff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000c6d6e000-0x00000000c6daffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000c6db0000-0x00000000c81affff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000c81b0000-0x00000000cc7befff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000cc7bf000-0x00000000ccebefff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ccebf000-0x00000000ccfbefff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000ccfbf000-0x00000000ccffefff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000ccfff000-0x00000000ccffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000cd000000-0x00000000cf9fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f0000000-0x00000000f3ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000feb00000-0x00000000feb03fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed10000-0x00000000fed19fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ffb80000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000022f5fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] efi: EFI v2.31 by INSYDE Corp.
+[    0.000000] efi:  ACPI=0xccffe000  ACPI 2.0=0xccffe014  SMBIOS=0xccebef98 
+[    0.000000] efi: mem00: type=3, attr=0xf, range=[0x0000000000000000-0x0000000000001000) (0MB)
+[    0.000000] efi: mem01: type=7, attr=0xf, range=[0x0000000000001000-0x000000000006f000) (0MB)
+[    0.000000] efi: mem02: type=4, attr=0xf, range=[0x000000000006f000-0x0000000000070000) (0MB)
+[    0.000000] efi: mem03: type=7, attr=0xf, range=[0x0000000000070000-0x0000000000080000) (0MB)
+[    0.000000] efi: mem04: type=3, attr=0xf, range=[0x0000000000080000-0x0000000000082000) (0MB)
+[    0.000000] efi: mem05: type=7, attr=0xf, range=[0x0000000000082000-0x0000000000088000) (0MB)
+[    0.000000] efi: mem06: type=6, attr=0x800000000000000f, range=[0x0000000000088000-0x00000000000a0000) (0MB)
+[    0.000000] efi: mem07: type=2, attr=0xf, range=[0x0000000000100000-0x00000000014f3000) (19MB)
+[    0.000000] efi: mem08: type=7, attr=0xf, range=[0x00000000014f3000-0x0000000002000000) (11MB)
+[    0.000000] efi: mem09: type=2, attr=0xf, range=[0x0000000002000000-0x00000000033f3000) (19MB)
+[    0.000000] efi: mem10: type=7, attr=0xf, range=[0x00000000033f3000-0x0000000020000000) (460MB)
+[    0.000000] efi: mem11: type=0, attr=0xf, range=[0x0000000020000000-0x0000000020200000) (2MB)
+[    0.000000] efi: mem12: type=7, attr=0xf, range=[0x0000000020200000-0x0000000034d1c000) (331MB)
+[    0.000000] efi: mem13: type=2, attr=0xf, range=[0x0000000034d1c000-0x0000000036686000) (25MB)
+[    0.000000] efi: mem14: type=7, attr=0xf, range=[0x0000000036686000-0x0000000040004000) (153MB)
+[    0.000000] efi: mem15: type=0, attr=0xf, range=[0x0000000040004000-0x0000000040005000) (0MB)
+[    0.000000] efi: mem16: type=7, attr=0xf, range=[0x0000000040005000-0x0000000093828000) (1336MB)
+[    0.000000] efi: mem17: type=2, attr=0xf, range=[0x0000000093828000-0x00000000c51c0000) (793MB)
+[    0.000000] efi: mem18: type=4, attr=0xf, range=[0x00000000c51c0000-0x00000000c51e0000) (0MB)
+[    0.000000] efi: mem19: type=7, attr=0xf, range=[0x00000000c51e0000-0x00000000c5c1a000) (10MB)
+[    0.000000] efi: mem20: type=2, attr=0xf, range=[0x00000000c5c1a000-0x00000000c5dd4000) (1MB)
+[    0.000000] efi: mem21: type=4, attr=0xf, range=[0x00000000c5dd4000-0x00000000c5fed000) (2MB)
+[    0.000000] efi: mem22: type=0, attr=0xf, range=[0x00000000c5fed000-0x00000000c6d6e000) (13MB)
+[    0.000000] efi: mem23: type=4, attr=0xf, range=[0x00000000c6d6e000-0x00000000c6db0000) (0MB)
+[    0.000000] efi: mem24: type=0, attr=0xf, range=[0x00000000c6db0000-0x00000000c81b0000) (20MB)
+[    0.000000] efi: mem25: type=7, attr=0xf, range=[0x00000000c81b0000-0x00000000c81bd000) (0MB)
+[    0.000000] efi: mem26: type=2, attr=0xf, range=[0x00000000c81bd000-0x00000000c81bf000) (0MB)
+[    0.000000] efi: mem27: type=7, attr=0xf, range=[0x00000000c81bf000-0x00000000c828b000) (0MB)
+[    0.000000] efi: mem28: type=1, attr=0xf, range=[0x00000000c828b000-0x00000000c83bf000) (1MB)
+[    0.000000] efi: mem29: type=7, attr=0xf, range=[0x00000000c83bf000-0x00000000c8fb6000) (11MB)
+[    0.000000] efi: mem30: type=4, attr=0xf, range=[0x00000000c8fb6000-0x00000000c9031000) (0MB)
+[    0.000000] efi: mem31: type=7, attr=0xf, range=[0x00000000c9031000-0x00000000c904b000) (0MB)
+[    0.000000] efi: mem32: type=4, attr=0xf, range=[0x00000000c904b000-0x00000000ca269000) (18MB)
+[    0.000000] efi: mem33: type=7, attr=0xf, range=[0x00000000ca269000-0x00000000ca26d000) (0MB)
+[    0.000000] efi: mem34: type=4, attr=0xf, range=[0x00000000ca26d000-0x00000000ca272000) (0MB)
+[    0.000000] efi: mem35: type=7, attr=0xf, range=[0x00000000ca272000-0x00000000ca273000) (0MB)
+[    0.000000] efi: mem36: type=4, attr=0xf, range=[0x00000000ca273000-0x00000000ca3c5000) (1MB)
+[    0.000000] efi: mem37: type=7, attr=0xf, range=[0x00000000ca3c5000-0x00000000ca3c8000) (0MB)
+[    0.000000] efi: mem38: type=4, attr=0xf, range=[0x00000000ca3c8000-0x00000000ca3d7000) (0MB)
+[    0.000000] efi: mem39: type=7, attr=0xf, range=[0x00000000ca3d7000-0x00000000ca3d9000) (0MB)
+[    0.000000] efi: mem40: type=4, attr=0xf, range=[0x00000000ca3d9000-0x00000000ca800000) (4MB)
+[    0.000000] efi: mem41: type=7, attr=0xf, range=[0x00000000ca800000-0x00000000ca801000) (0MB)
+[    0.000000] efi: mem42: type=4, attr=0xf, range=[0x00000000ca801000-0x00000000ca818000) (0MB)
+[    0.000000] efi: mem43: type=7, attr=0xf, range=[0x00000000ca818000-0x00000000ca822000) (0MB)
+[    0.000000] efi: mem44: type=4, attr=0xf, range=[0x00000000ca822000-0x00000000cc3bf000) (27MB)
+[    0.000000] efi: mem45: type=7, attr=0xf, range=[0x00000000cc3bf000-0x00000000cc424000) (0MB)
+[    0.000000] efi: mem46: type=2, attr=0xf, range=[0x00000000cc424000-0x00000000cc430000) (0MB)
+[    0.000000] efi: mem47: type=3, attr=0xf, range=[0x00000000cc430000-0x00000000cc7bf000) (3MB)
+[    0.000000] efi: mem48: type=5, attr=0x800000000000000f, range=[0x00000000cc7bf000-0x00000000cc84f000) (0MB)
+[    0.000000] efi: mem49: type=6, attr=0x800000000000000f, range=[0x00000000cc84f000-0x00000000cc851000) (0MB)
+[    0.000000] efi: mem50: type=5, attr=0x800000000000000f, range=[0x00000000cc851000-0x00000000cc864000) (0MB)
+[    0.000000] efi: mem51: type=6, attr=0x800000000000000f, range=[0x00000000cc864000-0x00000000cc865000) (0MB)
+[    0.000000] efi: mem52: type=5, attr=0x800000000000000f, range=[0x00000000cc865000-0x00000000cc87c000) (0MB)
+[    0.000000] efi: mem53: type=6, attr=0x800000000000000f, range=[0x00000000cc87c000-0x00000000cc87d000) (0MB)
+[    0.000000] efi: mem54: type=5, attr=0x800000000000000f, range=[0x00000000cc87d000-0x00000000cc888000) (0MB)
+[    0.000000] efi: mem55: type=6, attr=0x800000000000000f, range=[0x00000000cc888000-0x00000000cc889000) (0MB)
+[    0.000000] efi: mem56: type=5, attr=0x800000000000000f, range=[0x00000000cc889000-0x00000000cc893000) (0MB)
+[    0.000000] efi: mem57: type=6, attr=0x800000000000000f, range=[0x00000000cc893000-0x00000000cc894000) (0MB)
+[    0.000000] efi: mem58: type=5, attr=0x800000000000000f, range=[0x00000000cc894000-0x00000000cc89a000) (0MB)
+[    0.000000] efi: mem59: type=6, attr=0x800000000000000f, range=[0x00000000cc89a000-0x00000000cc89b000) (0MB)
+[    0.000000] efi: mem60: type=5, attr=0x800000000000000f, range=[0x00000000cc89b000-0x00000000cc8a9000) (0MB)
+[    0.000000] efi: mem61: type=6, attr=0x800000000000000f, range=[0x00000000cc8a9000-0x00000000cc8aa000) (0MB)
+[    0.000000] efi: mem62: type=5, attr=0x800000000000000f, range=[0x00000000cc8aa000-0x00000000cc8b9000) (0MB)
+[    0.000000] efi: mem63: type=6, attr=0x800000000000000f, range=[0x00000000cc8b9000-0x00000000cc8ba000) (0MB)
+[    0.000000] efi: mem64: type=5, attr=0x800000000000000f, range=[0x00000000cc8ba000-0x00000000cc8f3000) (0MB)
+[    0.000000] efi: mem65: type=6, attr=0x800000000000000f, range=[0x00000000cc8f3000-0x00000000cc938000) (0MB)
+[    0.000000] efi: mem66: type=5, attr=0x800000000000000f, range=[0x00000000cc938000-0x00000000cc9bf000) (0MB)
+[    0.000000] efi: mem67: type=6, attr=0x800000000000000f, range=[0x00000000cc9bf000-0x00000000ccabf000) (1MB)
+[    0.000000] efi: mem68: type=0, attr=0xf, range=[0x00000000ccabf000-0x00000000ccebf000) (4MB)
+[    0.000000] efi: mem69: type=10, attr=0xf, range=[0x00000000ccebf000-0x00000000ccfbf000) (1MB)
+[    0.000000] efi: mem70: type=9, attr=0xf, range=[0x00000000ccfbf000-0x00000000ccfff000) (0MB)
+[    0.000000] efi: mem71: type=4, attr=0xf, range=[0x00000000ccfff000-0x00000000cd000000) (0MB)
+[    0.000000] efi: mem72: type=7, attr=0xf, range=[0x0000000100000000-0x000000022f600000) (4854MB)
+[    0.000000] efi: mem73: type=0, attr=0x0, range=[0x00000000000a0000-0x00000000000c0000) (0MB)
+[    0.000000] efi: mem74: type=0, attr=0x0, range=[0x00000000cd000000-0x00000000cfa00000) (42MB)
+[    0.000000] efi: mem75: type=11, attr=0x8000000000000001, range=[0x00000000f0000000-0x00000000f4000000) (64MB)
+[    0.000000] efi: mem76: type=11, attr=0x8000000000000001, range=[0x00000000feb00000-0x00000000feb04000) (0MB)
+[    0.000000] efi: mem77: type=11, attr=0x8000000000000001, range=[0x00000000fec00000-0x00000000fec01000) (0MB)
+[    0.000000] efi: mem78: type=11, attr=0x8000000000000001, range=[0x00000000fed10000-0x00000000fed1a000) (0MB)
+[    0.000000] efi: mem79: type=11, attr=0x8000000000000001, range=[0x00000000fed1c000-0x00000000fed20000) (0MB)
+[    0.000000] efi: mem80: type=11, attr=0x8000000000000001, range=[0x00000000fee00000-0x00000000fee01000) (0MB)
+[    0.000000] efi: mem81: type=11, attr=0x8000000000000000, range=[0x00000000ffb80000-0x0000000100000000) (4MB)
+[    0.000000] SMBIOS 2.7 present.
+[    0.000000] DMI: LENOVO 20236/INVALID, BIOS 78CN24WW(V2.02) 09/23/2013
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] No AGP bridge found
+[    0.000000] e820: last_pfn = 0x22f600 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-E7FFF write-protect
+[    0.000000]   E8000-EFFFF write-combining
+[    0.000000]   F0000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 000000000 mask F80000000 write-back
+[    0.000000]   1 base 080000000 mask FC0000000 write-back
+[    0.000000]   2 base 0C0000000 mask FF8000000 write-back
+[    0.000000]   3 base 0C8000000 mask FFC000000 write-back
+[    0.000000]   4 base 0CC000000 mask FFF000000 write-back
+[    0.000000]   5 base 0FF800000 mask FFF800000 write-protect
+[    0.000000]   6 base 100000000 mask F00000000 write-back
+[    0.000000]   7 base 200000000 mask FC0000000 write-back
+[    0.000000]   8 base 22F600000 mask FFFE00000 uncachable
+[    0.000000]   9 base 22F800000 mask FFF800000 uncachable
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] e820: last_pfn = 0xcd000 max_arch_pfn = 0x400000000
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] Base memory trampoline at [ffff880000082000] 82000 size 24576
+[    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+[    0.000000]  [mem 0x00000000-0x000fffff] page 4k
+[    0.000000] BRK [0x02fd1000, 0x02fd1fff] PGTABLE
+[    0.000000] BRK [0x02fd2000, 0x02fd2fff] PGTABLE
+[    0.000000] BRK [0x02fd3000, 0x02fd3fff] PGTABLE
+[    0.000000] init_memory_mapping: [mem 0x22f400000-0x22f5fffff]
+[    0.000000]  [mem 0x22f400000-0x22f5fffff] page 2M
+[    0.000000] BRK [0x02fd4000, 0x02fd4fff] PGTABLE
+[    0.000000] init_memory_mapping: [mem 0x22c000000-0x22f3fffff]
+[    0.000000]  [mem 0x22c000000-0x22f3fffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x200000000-0x22bffffff]
+[    0.000000]  [mem 0x200000000-0x22bffffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x00100000-0x1fffffff]
+[    0.000000]  [mem 0x00100000-0x001fffff] page 4k
+[    0.000000]  [mem 0x00200000-0x1fffffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x20200000-0x40003fff]
+[    0.000000]  [mem 0x20200000-0x3fffffff] page 2M
+[    0.000000]  [mem 0x40000000-0x40003fff] page 4k
+[    0.000000] BRK [0x02fd5000, 0x02fd5fff] PGTABLE
+[    0.000000] BRK [0x02fd6000, 0x02fd6fff] PGTABLE
+[    0.000000] init_memory_mapping: [mem 0x40005000-0xc5fecfff]
+[    0.000000]  [mem 0x40005000-0x401fffff] page 4k
+[    0.000000]  [mem 0x40200000-0xc5dfffff] page 2M
+[    0.000000]  [mem 0xc5e00000-0xc5fecfff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xc6d6e000-0xc6daffff]
+[    0.000000]  [mem 0xc6d6e000-0xc6daffff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xc81b0000-0xcc7befff]
+[    0.000000]  [mem 0xc81b0000-0xc81fffff] page 4k
+[    0.000000]  [mem 0xc8200000-0xcc5fffff] page 2M
+[    0.000000]  [mem 0xcc600000-0xcc7befff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xccfff000-0xccffffff]
+[    0.000000]  [mem 0xccfff000-0xccffffff] page 4k
+[    0.000000] init_memory_mapping: [mem 0x100000000-0x1ffffffff]
+[    0.000000]  [mem 0x100000000-0x1ffffffff] page 2M
+[    0.000000] RAMDISK: [mem 0x34d1c000-0x36685fff]
+[    0.000000] ACPI: RSDP 00000000ccffe014 00024 (v02 LENOVO)
+[    0.000000] ACPI: XSDT 00000000ccffe210 000A4 (v01 LENOVO CB-01    00000001      01000013)
+[    0.000000] ACPI: FACP 00000000ccffa000 0010C (v05 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: DSDT 00000000ccfec000 0A06F (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: FACS 00000000ccfbb000 00040
+[    0.000000] ACPI: SLIC 00000000ccffd000 00176 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: UEFI 00000000ccffc000 00236 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: ASF! 00000000ccffb000 000A5 (v32 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: HPET 00000000ccff9000 00038 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: APIC 00000000ccff8000 0008C (v03 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: MCFG 00000000ccff7000 0003C (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: SSDT 00000000ccfeb000 006FE (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: BOOT 00000000ccfe9000 00028 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: ASPT 00000000ccfe7000 00034 (v07 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: DBGP 00000000ccfe6000 00034 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: FPDT 00000000ccfe4000 00044 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: MSDM 00000000ccfe3000 00055 (v03 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: SSDT 00000000ccfe2000 00860 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: SSDT 00000000ccfe1000 00B22 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: BGRT 00000000ccfe0000 00038 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000022f5fffff]
+[    0.000000] Initmem setup node 0 [mem 0x00000000-0x22f5fffff]
+[    0.000000]   NODE_DATA [mem 0x22f5f0000-0x22f5f4fff]
+[    0.000000]  [ffffea0000000000-ffffea0008bfffff] PMD -> [ffff880226c00000-ffff88022ebfffff] on node 0
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+[    0.000000]   DMA32    [mem 0x01000000-0xffffffff]
+[    0.000000]   Normal   [mem 0x100000000-0x22f5fffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00001000-0x00087fff]
+[    0.000000]   node   0: [mem 0x00100000-0x1fffffff]
+[    0.000000]   node   0: [mem 0x20200000-0x40003fff]
+[    0.000000]   node   0: [mem 0x40005000-0xc5fecfff]
+[    0.000000]   node   0: [mem 0xc6d6e000-0xc6daffff]
+[    0.000000]   node   0: [mem 0xc81b0000-0xcc7befff]
+[    0.000000]   node   0: [mem 0xccfff000-0xccffffff]
+[    0.000000]   node   0: [mem 0x100000000-0x22f5fffff]
+[    0.000000] On node 0 totalpages: 2070981
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 25 pages reserved
+[    0.000000]   DMA zone: 3975 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 12881 pages used for memmap
+[    0.000000]   DMA32 zone: 824382 pages, LIFO batch:31
+[    0.000000]   Normal zone: 19416 pages used for memmap
+[    0.000000]   Normal zone: 1242624 pages, LIFO batch:31
+[    0.000000] ACPI: PM-Timer IO Port: 0x408
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x01] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x02] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x04] lapic_id[0x03] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x05] lapic_id[0x04] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x06] lapic_id[0x05] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x07] lapic_id[0x06] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x08] lapic_id[0x07] enabled)
+[    0.000000] ACPI: IOAPIC (id[0x00] address[0xfec00000] gsi_base[0])
+[    0.000000] IOAPIC[0]: apic_id 0, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ2 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.000000] nr_irqs_gsi: 40
+[    0.000000] PM: Registered nosave memory: [mem 0x00088000-0x000bffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000c0000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x20000000-0x201fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x40004000-0x40004fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xc5fed000-0xc6d6dfff]
+[    0.000000] PM: Registered nosave memory: [mem 0xc6db0000-0xc81affff]
+[    0.000000] PM: Registered nosave memory: [mem 0xcc7bf000-0xccebefff]
+[    0.000000] PM: Registered nosave memory: [mem 0xccebf000-0xccfbefff]
+[    0.000000] PM: Registered nosave memory: [mem 0xccfbf000-0xccffefff]
+[    0.000000] PM: Registered nosave memory: [mem 0xcd000000-0xcf9fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xcfa00000-0xefffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xf0000000-0xf3ffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xf4000000-0xfeafffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfeb00000-0xfeb03fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfeb04000-0xfebfffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfec01000-0xfed0ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed10000-0xfed19fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed1a000-0xfed1bfff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed1c000-0xfed1ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed20000-0xfedfffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfee01000-0xffb7ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xffb80000-0xffffffff]
+[    0.000000] e820: [mem 0xcfa00000-0xefffffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:8 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 29 pages/cpu @ffff88022f200000 s86720 r8192 d23872 u262144
+[    0.000000] pcpu-alloc: s86720 r8192 d23872 u262144 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 2038595
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.11.0-12-generic root=UUID=0a897b95-97ff-4b23-9c2d-c78d2963e2b5 ro quiet splash vt.handoff=7
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] xsave: enabled xstate_bv 0x7, cntxt size 0x340
+[    0.000000] Checking aperture...
+[    0.000000] No AGP bridge found
+[    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    0.000000] Memory: 7983928K/8283924K available (7141K kernel code, 1082K rwdata, 3260K rodata, 1364K init, 1420K bss, 299996K reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=8.
+[    0.000000] 	Offload RCU callbacks from all CPUs
+[    0.000000] 	Offload RCU callbacks from CPUs: 0-255.
+[    0.000000] NR_IRQS:16640 nr_irqs:744 16
+[    0.000000] Console: colour dummy device 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] allocated 33554432 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] hpet clockevent registered
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.004000] tsc: Detected 2095.207 MHz processor
+[    0.000002] Calibrating delay loop (skipped), value calculated using timer frequency.. 4190.41 BogoMIPS (lpj=8380828)
+[    0.000005] pid_max: default: 32768 minimum: 301
+[    0.000019] init_memory_mapping: [mem 0xcc7bf000-0xcc84efff]
+[    0.000021]  [mem 0xcc7bf000-0xcc84efff] page 4k
+[    0.000035] init_memory_mapping: [mem 0xcc84f000-0xcc850fff]
+[    0.000037]  [mem 0xcc84f000-0xcc850fff] page 4k
+[    0.000044] init_memory_mapping: [mem 0xcc851000-0xcc863fff]
+[    0.000045]  [mem 0xcc851000-0xcc863fff] page 4k
+[    0.000052] init_memory_mapping: [mem 0xcc864000-0xcc864fff]
+[    0.000053]  [mem 0xcc864000-0xcc864fff] page 4k
+[    0.000060] init_memory_mapping: [mem 0xcc865000-0xcc87bfff]
+[    0.000061]  [mem 0xcc865000-0xcc87bfff] page 4k
+[    0.000069] init_memory_mapping: [mem 0xcc87c000-0xcc87cfff]
+[    0.000070]  [mem 0xcc87c000-0xcc87cfff] page 4k
+[    0.000078] init_memory_mapping: [mem 0xcc87d000-0xcc887fff]
+[    0.000079]  [mem 0xcc87d000-0xcc887fff] page 4k
+[    0.000087] init_memory_mapping: [mem 0xcc888000-0xcc888fff]
+[    0.000088]  [mem 0xcc888000-0xcc888fff] page 4k
+[    0.000095] init_memory_mapping: [mem 0xcc889000-0xcc892fff]
+[    0.000096]  [mem 0xcc889000-0xcc892fff] page 4k
+[    0.000103] init_memory_mapping: [mem 0xcc893000-0xcc893fff]
+[    0.000104]  [mem 0xcc893000-0xcc893fff] page 4k
+[    0.000111] init_memory_mapping: [mem 0xcc894000-0xcc899fff]
+[    0.000112]  [mem 0xcc894000-0xcc899fff] page 4k
+[    0.000119] init_memory_mapping: [mem 0xcc89a000-0xcc89afff]
+[    0.000120]  [mem 0xcc89a000-0xcc89afff] page 4k
+[    0.000127] init_memory_mapping: [mem 0xcc89b000-0xcc8a8fff]
+[    0.000128]  [mem 0xcc89b000-0xcc8a8fff] page 4k
+[    0.000135] init_memory_mapping: [mem 0xcc8a9000-0xcc8a9fff]
+[    0.000136]  [mem 0xcc8a9000-0xcc8a9fff] page 4k
+[    0.000143] init_memory_mapping: [mem 0xcc8aa000-0xcc8b8fff]
+[    0.000144]  [mem 0xcc8aa000-0xcc8b8fff] page 4k
+[    0.000151] init_memory_mapping: [mem 0xcc8b9000-0xcc8b9fff]
+[    0.000152]  [mem 0xcc8b9000-0xcc8b9fff] page 4k
+[    0.000159] init_memory_mapping: [mem 0xcc8ba000-0xcc8f2fff]
+[    0.000160]  [mem 0xcc8ba000-0xcc8f2fff] page 4k
+[    0.000167] init_memory_mapping: [mem 0xcc8f3000-0xcc937fff]
+[    0.000168]  [mem 0xcc8f3000-0xcc937fff] page 4k
+[    0.000176] init_memory_mapping: [mem 0xcc938000-0xcc9befff]
+[    0.000177]  [mem 0xcc938000-0xcc9befff] page 4k
+[    0.000185] init_memory_mapping: [mem 0xcc9bf000-0xccabefff]
+[    0.000187]  [mem 0xcc9bf000-0xccabefff] page 4k
+[    0.021967] Security Framework initialized
+[    0.021988] AppArmor: AppArmor initialized
+[    0.021989] Yama: becoming mindful.
+[    0.022514] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.024804] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.025828] Mount-cache hash table entries: 256
+[    0.026007] Initializing cgroup subsys memory
+[    0.026015] Initializing cgroup subsys devices
+[    0.026017] Initializing cgroup subsys freezer
+[    0.026019] Initializing cgroup subsys blkio
+[    0.026020] Initializing cgroup subsys perf_event
+[    0.026022] Initializing cgroup subsys hugetlb
+[    0.026044] CPU: Physical Processor ID: 0
+[    0.026045] CPU: Processor Core ID: 0
+[    0.026050] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.026050] ENERGY_PERF_BIAS: View and update with x86_energy_perf_policy(8)
+[    0.026476] mce: CPU supports 9 MCE banks
+[    0.026490] CPU0: Thermal monitoring enabled (TM1)
+[    0.026503] Last level iTLB entries: 4KB 512, 2MB 0, 4MB 0
+[    0.026503] Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32
+[    0.026503] tlb_flushall_shift: 1
+[    0.026643] Freeing SMP alternatives memory: 28K (ffffffff81e65000 - ffffffff81e6c000)
+[    0.029073] ACPI: Core revision 20130517
+[    0.035363] ACPI: All ACPI Tables successfully acquired
+[    0.051381] ftrace: allocating 27796 entries in 109 pages
+[    0.066533] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.106240] smpboot: CPU0: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz (fam: 06, model: 3a, stepping: 09)
+[    0.106248] TSC deadline timer enabled
+[    0.106257] Performance Events: PEBS fmt1+, 16-deep LBR, IvyBridge events, full-width counters, Intel PMU driver.
+[    0.106264] ... version:                3
+[    0.106265] ... bit width:              48
+[    0.106266] ... generic registers:      4
+[    0.106267] ... value mask:             0000ffffffffffff
+[    0.106268] ... max period:             0000ffffffffffff
+[    0.106269] ... fixed-purpose events:   3
+[    0.106270] ... event mask:             000000070000000f
+[    0.121430] NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+[    0.107897] smpboot: Booting Node   0, Processors  #1 #2 #3 #4 #5 #6 #7 OK
+[    0.203337] Brought up 8 CPUs
+[    0.203341] smpboot: Total of 8 processors activated (33523.31 BogoMIPS)
+[    0.211347] devtmpfs: initialized
+[    0.212477] EVM: security.selinux
+[    0.212479] EVM: security.SMACK64
+[    0.212480] EVM: security.capability
+[    0.212527] PM: Registering ACPI NVS region [mem 0xccebf000-0xccfbefff] (1048576 bytes)
+[    0.213379] regulator-dummy: no parameters
+[    0.213411] RTC time: 11:43:58, date: 04/30/14
+[    0.213445] NET: Registered protocol family 16
+[    0.213582] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.213584] ACPI: bus type PCI registered
+[    0.213586] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.213644] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf0000000-0xf3ffffff] (base 0xf0000000)
+[    0.213647] PCI: MMCONFIG at [mem 0xf0000000-0xf3ffffff] reserved in E820
+[    0.220883] PCI: Using configuration type 1 for base access
+[    0.221826] bio: create slab <bio-0> at 0
+[    0.221997] ACPI: Added _OSI(Module Device)
+[    0.221999] ACPI: Added _OSI(Processor Device)
+[    0.222001] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.222002] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.223578] ACPI: EC: Look up EC in DSDT
+[    0.225229] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.228157] [Firmware Bug]: ACPI: BIOS _OSI(Linux) query ignored
+[    0.231601] ACPI: SSDT 00000000ccdf7018 0083B (v01  PmRef  Cpu0Cst 00003001 INTL 20120518)
+[    0.232010] ACPI: Dynamic OEM Table Load:
+[    0.232013] ACPI: SSDT           (null) 0083B (v01  PmRef  Cpu0Cst 00003001 INTL 20120518)
+[    0.235423] ACPI: SSDT 00000000ccdf8a98 00303 (v01  PmRef    ApIst 00003000 INTL 20120518)
+[    0.235857] ACPI: Dynamic OEM Table Load:
+[    0.235859] ACPI: SSDT           (null) 00303 (v01  PmRef    ApIst 00003000 INTL 20120518)
+[    0.239287] ACPI: SSDT 00000000ccdf6d98 00119 (v01  PmRef    ApCst 00003000 INTL 20120518)
+[    0.239687] ACPI: Dynamic OEM Table Load:
+[    0.239689] ACPI: SSDT           (null) 00119 (v01  PmRef    ApCst 00003000 INTL 20120518)
+[    0.244622] ACPI: Interpreter enabled
+[    0.244629] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20130517/hwxface-571)
+[    0.244634] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20130517/hwxface-571)
+[    0.244650] ACPI: (supports S0 S3 S4 S5)
+[    0.244652] ACPI: Using IOAPIC for interrupt routing
+[    0.244680] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.244804] ACPI: No dock devices found.
+[    0.383495] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+[    0.383621] \_SB_.PCI0:_OSC invalid UUID
+[    0.383622] _OSC request data:1 8 0 
+[    0.383671] \_SB_.PCI0:_OSC invalid UUID
+[    0.383672] _OSC request data:1 1f 0 
+[    0.383675] acpi PNP0A08:00: ACPI _OSC support notification failed, disabling PCIe ASPM
+[    0.383677] acpi PNP0A08:00: Unable to request _OSC control (_OSC support mask: 0x08)
+[    0.384122] PCI host bridge to bus 0000:00
+[    0.384125] pci_bus 0000:00: root bus resource [bus 00-3e]
+[    0.384128] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7]
+[    0.384129] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff]
+[    0.384131] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff]
+[    0.384133] pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000c3fff]
+[    0.384135] pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000c7fff]
+[    0.384136] pci_bus 0000:00: root bus resource [mem 0x000c8000-0x000cbfff]
+[    0.384138] pci_bus 0000:00: root bus resource [mem 0x000cc000-0x000cffff]
+[    0.384140] pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff]
+[    0.384141] pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff]
+[    0.384143] pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff]
+[    0.384145] pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff]
+[    0.384147] pci_bus 0000:00: root bus resource [mem 0xcfa00000-0xfeafffff]
+[    0.384155] pci 0000:00:00.0: [8086:0154] type 00 class 0x060000
+[    0.384242] pci 0000:00:02.0: [8086:0166] type 00 class 0x030000
+[    0.384255] pci 0000:00:02.0: reg 0x10: [mem 0xe0000000-0xe03fffff 64bit]
+[    0.384262] pci 0000:00:02.0: reg 0x18: [mem 0xd0000000-0xdfffffff 64bit pref]
+[    0.384268] pci 0000:00:02.0: reg 0x20: [io  0x3000-0x303f]
+[    0.384370] pci 0000:00:14.0: [8086:1e31] type 00 class 0x0c0330
+[    0.384395] pci 0000:00:14.0: reg 0x10: [mem 0xe0600000-0xe060ffff 64bit]
+[    0.384472] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.384516] pci 0000:00:14.0: System wakeup disabled by ACPI
+[    0.384553] pci 0000:00:16.0: [8086:1e3a] type 00 class 0x078000
+[    0.384580] pci 0000:00:16.0: reg 0x10: [mem 0xe0614000-0xe061400f 64bit]
+[    0.384661] pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+[    0.384743] pci 0000:00:1a.0: [8086:1e2d] type 00 class 0x0c0320
+[    0.384767] pci 0000:00:1a.0: reg 0x10: [mem 0xe0619000-0xe06193ff]
+[    0.384863] pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+[    0.384929] pci 0000:00:1a.0: System wakeup disabled by ACPI
+[    0.384965] pci 0000:00:1b.0: [8086:1e20] type 00 class 0x040300
+[    0.384984] pci 0000:00:1b.0: reg 0x10: [mem 0xe0610000-0xe0613fff 64bit]
+[    0.385058] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.385103] pci 0000:00:1b.0: System wakeup disabled by ACPI
+[    0.385135] pci 0000:00:1c.0: [8086:1e10] type 01 class 0x060400
+[    0.385219] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.385295] pci 0000:00:1c.1: [8086:1e12] type 01 class 0x060400
+[    0.385378] pci 0000:00:1c.1: PME# supported from D0 D3hot D3cold
+[    0.385466] pci 0000:00:1d.0: [8086:1e26] type 00 class 0x0c0320
+[    0.385489] pci 0000:00:1d.0: reg 0x10: [mem 0xe0618000-0xe06183ff]
+[    0.385585] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.385651] pci 0000:00:1d.0: System wakeup disabled by ACPI
+[    0.385684] pci 0000:00:1f.0: [8086:1e59] type 00 class 0x060100
+[    0.385861] pci 0000:00:1f.2: [8086:1e03] type 00 class 0x010601
+[    0.385883] pci 0000:00:1f.2: reg 0x10: [io  0x3088-0x308f]
+[    0.385892] pci 0000:00:1f.2: reg 0x14: [io  0x3094-0x3097]
+[    0.385900] pci 0000:00:1f.2: reg 0x18: [io  0x3080-0x3087]
+[    0.385909] pci 0000:00:1f.2: reg 0x1c: [io  0x3090-0x3093]
+[    0.385918] pci 0000:00:1f.2: reg 0x20: [io  0x3060-0x307f]
+[    0.385927] pci 0000:00:1f.2: reg 0x24: [mem 0xe0617000-0xe06177ff]
+[    0.385976] pci 0000:00:1f.2: PME# supported from D3hot
+[    0.386041] pci 0000:00:1f.3: [8086:1e22] type 00 class 0x0c0500
+[    0.386059] pci 0000:00:1f.3: reg 0x10: [mem 0xe0615000-0xe06150ff 64bit]
+[    0.386081] pci 0000:00:1f.3: reg 0x20: [io  0x3040-0x305f]
+[    0.386297] pci 0000:01:00.0: [1969:10a0] type 00 class 0x020000
+[    0.386394] pci 0000:01:00.0: reg 0x10: [mem 0xe0500000-0xe053ffff 64bit]
+[    0.386469] pci 0000:01:00.0: reg 0x18: [io  0x2000-0x207f]
+[    0.386972] pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.387103] pci 0000:01:00.0: System wakeup disabled by ACPI
+[    0.391352] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.391357] pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+[    0.391362] pci 0000:00:1c.0:   bridge window [mem 0xe0500000-0xe05fffff]
+[    0.391492] pci 0000:02:00.0: [8086:0893] type 00 class 0x028000
+[    0.391541] pci 0000:02:00.0: reg 0x10: [mem 0xe0400000-0xe0401fff 64bit]
+[    0.391775] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+[    0.391824] pci 0000:02:00.0: System wakeup disabled by ACPI
+[    0.399385] pci 0000:00:1c.1: PCI bridge to [bus 02]
+[    0.399392] pci 0000:00:1c.1:   bridge window [mem 0xe0400000-0xe04fffff]
+[    0.443756] ACPI: PCI Interrupt Link [LNKA] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.443812] ACPI: PCI Interrupt Link [LNKB] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.443865] ACPI: PCI Interrupt Link [LNKC] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.443917] ACPI: PCI Interrupt Link [LNKD] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.443969] ACPI: PCI Interrupt Link [LNKE] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.444021] ACPI: PCI Interrupt Link [LNKF] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.444073] ACPI: PCI Interrupt Link [LNKG] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.444124] ACPI: PCI Interrupt Link [LNKH] (IRQs 1 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.444372] ACPI: Enabled 4 GPEs in block 00 to 3F
+[    0.444379] ACPI: \_SB_.PCI0: notify handler is installed
+[    0.444438] Found 1 acpi root devices
+[    0.444468] ACPI: EC: GPE = 0x17, I/O: command/status = 0x66, data = 0x62
+[    0.444556] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.444559] vgaarb: loaded
+[    0.444560] vgaarb: bridge control possible 0000:00:02.0
+[    0.444709] SCSI subsystem initialized
+[    0.444711] ACPI: bus type ATA registered
+[    0.444757] libata version 3.00 loaded.
+[    0.444770] ACPI: bus type USB registered
+[    0.444785] usbcore: registered new interface driver usbfs
+[    0.444791] usbcore: registered new interface driver hub
+[    0.444814] usbcore: registered new device driver usb
+[    0.444930] PCI: Using ACPI for IRQ routing
+[    0.446583] PCI: pci_cache_line_size set to 64 bytes
+[    0.446700] e820: reserve RAM buffer [mem 0x00088000-0x0008ffff]
+[    0.446702] e820: reserve RAM buffer [mem 0x40004000-0x43ffffff]
+[    0.446703] e820: reserve RAM buffer [mem 0xc5fed000-0xc7ffffff]
+[    0.446704] e820: reserve RAM buffer [mem 0xc6db0000-0xc7ffffff]
+[    0.446706] e820: reserve RAM buffer [mem 0xcc7bf000-0xcfffffff]
+[    0.446708] e820: reserve RAM buffer [mem 0xcd000000-0xcfffffff]
+[    0.446709] e820: reserve RAM buffer [mem 0x22f600000-0x22fffffff]
+[    0.446785] NetLabel: Initializing
+[    0.446786] NetLabel:  domain hash size = 128
+[    0.446787] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.446796] NetLabel:  unlabeled traffic allowed by default
+[    0.446850] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    0.446856] hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+[    0.448883] Switched to clocksource hpet
+[    0.453402] AppArmor: AppArmor Filesystem Enabled
+[    0.453421] pnp: PnP ACPI init
+[    0.453432] ACPI: bus type PNP registered
+[    0.453460] pnp 00:00: [dma 4]
+[    0.453479] pnp 00:00: Plug and Play ACPI device, IDs PNP0200 (active)
+[    0.453497] pnp 00:01: Plug and Play ACPI device, IDs INT0800 (active)
+[    0.453594] pnp 00:02: Plug and Play ACPI device, IDs PNP0103 (active)
+[    0.453622] pnp 00:03: Plug and Play ACPI device, IDs PNP0c04 (active)
+[    0.453660] system 00:04: [io  0x0680-0x069f] has been reserved
+[    0.453663] system 00:04: [io  0x1000-0x100f] has been reserved
+[    0.453665] system 00:04: [io  0xffff] has been reserved
+[    0.453667] system 00:04: [io  0xffff] has been reserved
+[    0.453669] system 00:04: [io  0x0400-0x0453] could not be reserved
+[    0.453671] system 00:04: [io  0x0458-0x047f] has been reserved
+[    0.453672] system 00:04: [io  0x0500-0x057f] has been reserved
+[    0.453674] system 00:04: [io  0x164e-0x164f] has been reserved
+[    0.453676] system 00:04: [io  0xfd60-0xfd63] has been reserved
+[    0.453679] system 00:04: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.453702] pnp 00:05: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.453744] system 00:06: [io  0x0454-0x0457] has been reserved
+[    0.453747] system 00:06: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+[    0.453780] pnp 00:07: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.453827] pnp 00:08: Plug and Play ACPI device, IDs SYN2b13 SYN0700 SYN0002 PNP0f13 (active)
+[    0.497064] system 00:09: [mem 0xfed1c000-0xfed1ffff] has been reserved
+[    0.497066] system 00:09: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.497068] system 00:09: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.497070] system 00:09: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.497072] system 00:09: [mem 0xf0000000-0xf3ffffff] has been reserved
+[    0.497074] system 00:09: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.497076] system 00:09: [mem 0xfed90000-0xfed93fff] has been reserved
+[    0.497078] system 00:09: [mem 0xff000000-0xff000fff] has been reserved
+[    0.497080] system 00:09: [mem 0xff010000-0xffffffff] could not be reserved
+[    0.497083] system 00:09: [mem 0xfee00000-0xfeefffff] could not be reserved
+[    0.497084] system 00:09: [mem 0xcfa00000-0xcfa00fff] has been reserved
+[    0.497087] system 00:09: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.497419] system 00:0a: [mem 0x20000000-0x201fffff] has been reserved
+[    0.497421] system 00:0a: [mem 0x40004000-0x40004fff] has been reserved
+[    0.497424] system 00:0a: Plug and Play ACPI device, IDs PNP0c01 (active)
+[    0.497441] pnp: PnP ACPI: found 11 devices
+[    0.497442] ACPI: bus type PNP unregistered
+[    0.503685] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.503689] pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+[    0.503695] pci 0000:00:1c.0:   bridge window [mem 0xe0500000-0xe05fffff]
+[    0.503705] pci 0000:00:1c.1: PCI bridge to [bus 02]
+[    0.503710] pci 0000:00:1c.1:   bridge window [mem 0xe0400000-0xe04fffff]
+[    0.503874] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7]
+[    0.503876] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff]
+[    0.503878] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff]
+[    0.503880] pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000c3fff]
+[    0.503882] pci_bus 0000:00: resource 8 [mem 0x000c4000-0x000c7fff]
+[    0.503884] pci_bus 0000:00: resource 9 [mem 0x000c8000-0x000cbfff]
+[    0.503885] pci_bus 0000:00: resource 10 [mem 0x000cc000-0x000cffff]
+[    0.503887] pci_bus 0000:00: resource 11 [mem 0x000d0000-0x000d3fff]
+[    0.503889] pci_bus 0000:00: resource 12 [mem 0x000d4000-0x000d7fff]
+[    0.503891] pci_bus 0000:00: resource 13 [mem 0x000d8000-0x000dbfff]
+[    0.503892] pci_bus 0000:00: resource 14 [mem 0x000dc000-0x000dffff]
+[    0.503894] pci_bus 0000:00: resource 15 [mem 0xcfa00000-0xfeafffff]
+[    0.503896] pci_bus 0000:01: resource 0 [io  0x2000-0x2fff]
+[    0.503898] pci_bus 0000:01: resource 1 [mem 0xe0500000-0xe05fffff]
+[    0.503900] pci_bus 0000:02: resource 1 [mem 0xe0400000-0xe04fffff]
+[    0.503928] NET: Registered protocol family 2
+[    0.504106] TCP established hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.504298] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.504430] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.504447] TCP: reno registered
+[    0.504458] UDP hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.504487] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.504554] NET: Registered protocol family 1
+[    0.504564] pci 0000:00:02.0: Boot video device
+[    2.105825] pci 0000:00:1a.0: EHCI: BIOS handoff failed (BIOS bug?) 01010001
+[    3.706720] pci 0000:00:1d.0: EHCI: BIOS handoff failed (BIOS bug?) 01010001
+[    3.706909] pci 0000:01:00.0: set MSI_INTX_DISABLE_BUG flag
+[    3.706945] PCI: CLS 64 bytes, default 64
+[    3.706983] Trying to unpack rootfs image as initramfs...
+[    4.166750] Freeing initrd memory: 26024K (ffff880034d1c000 - ffff880036686000)
+[    4.166754] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    4.166757] software IO TLB [mem 0xc11c0000-0xc51c0000] (64MB) mapped at [ffff8800c11c0000-ffff8800c51bffff]
+[    4.166800] Simple Boot Flag at 0x44 set to 0x1
+[    4.167088] Scanning for low memory corruption every 60 seconds
+[    4.167348] Initialise module verification
+[    4.167386] audit: initializing netlink socket (disabled)
+[    4.167397] type=2000 audit(1398858242.124:1): initialized
+[    4.196732] bounce pool size: 64 pages
+[    4.196742] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    4.197817] zbud: loaded
+[    4.197946] VFS: Disk quotas dquot_6.5.2
+[    4.197983] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    4.198399] fuse init (API version 7.22)
+[    4.198464] msgmni has been set to 15760
+[    4.198943] Key type asymmetric registered
+[    4.198945] Asymmetric key parser 'x509' registered
+[    4.198971] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    4.199042] io scheduler noop registered
+[    4.199044] io scheduler deadline registered (default)
+[    4.199064] io scheduler cfq registered
+[    4.199219] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    4.199231] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    4.199292] efifb: probing for efifb
+[    4.199819] efifb: framebuffer at 0xd0000000, mapped to 0xffffc90009480000, using 4160k, total 4160k
+[    4.199821] efifb: mode is 1366x768x32, linelength=5504, pages=1
+[    4.199822] efifb: scrolling: redraw
+[    4.199823] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    4.202658] Console: switching to colour frame buffer device 170x48
+[    4.205387] fb0: EFI VGA frame buffer device
+[    4.205393] intel_idle: MWAIT substates: 0x21120
+[    4.205395] intel_idle: v0.4 model 0x3A
+[    4.205396] intel_idle: lapic_timer_reliable_states 0xffffffff
+[    4.205505] ACPI: AC Adapter [ACAD] (on-line)
+[    4.205599] input: Power Button as /devices/LNXSYSTM:00/device:00/PNP0A08:00/device:02/PNP0C0C:00/input/input0
+[    4.205603] ACPI: Power Button [PWRB]
+[    4.205640] input: Lid Switch as /devices/LNXSYSTM:00/device:00/PNP0C0D:00/input/input1
+[    4.205662] ACPI: Lid Switch [LID0]
+[    4.205689] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    4.205691] ACPI: Power Button [PWRF]
+[    4.205754] ACPI: Requesting acpi_cpufreq
+[    4.208051] thermal LNXTHERM:00: registered as thermal_zone0
+[    4.208054] ACPI: Thermal Zone [TZ00] (29 C)
+[    4.208083] GHES: HEST is not enabled!
+[    4.208145] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    4.251019] ACPI: Battery Slot [BAT1] (battery absent)
+[    4.251113] Linux agpgart interface v0.103
+[    4.252161] brd: module loaded
+[    4.252722] loop: module loaded
+[    4.253004] libphy: Fixed MDIO Bus: probed
+[    4.253072] tun: Universal TUN/TAP device driver, 1.6
+[    4.253073] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    4.253114] PPP generic driver version 2.4.2
+[    4.253151] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    4.253153] ehci-pci: EHCI PCI platform driver
+[    4.253256] ehci-pci 0000:00:1a.0: setting latency timer to 64
+[    4.253263] ehci-pci 0000:00:1a.0: EHCI Host Controller
+[    4.253268] ehci-pci 0000:00:1a.0: new USB bus registered, assigned bus number 1
+[    4.253282] ehci-pci 0000:00:1a.0: debug port 2
+[    4.257199] ehci-pci 0000:00:1a.0: cache line size of 64 is not supported
+[    4.257217] ehci-pci 0000:00:1a.0: irq 16, io mem 0xe0619000
+[    4.267030] ehci-pci 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+[    4.267047] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    4.267049] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.267051] usb usb1: Product: EHCI Host Controller
+[    4.267052] usb usb1: Manufacturer: Linux 3.11.0-12-generic ehci_hcd
+[    4.267054] usb usb1: SerialNumber: 0000:00:1a.0
+[    4.267140] hub 1-0:1.0: USB hub found
+[    4.267144] hub 1-0:1.0: 2 ports detected
+[    4.267298] ehci-pci 0000:00:1d.0: setting latency timer to 64
+[    4.267303] ehci-pci 0000:00:1d.0: EHCI Host Controller
+[    4.267307] ehci-pci 0000:00:1d.0: new USB bus registered, assigned bus number 2
+[    4.267320] ehci-pci 0000:00:1d.0: debug port 2
+[    4.271212] ehci-pci 0000:00:1d.0: cache line size of 64 is not supported
+[    4.271227] ehci-pci 0000:00:1d.0: irq 23, io mem 0xe0618000
+[    4.283038] ehci-pci 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+[    4.283052] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    4.283054] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.283056] usb usb2: Product: EHCI Host Controller
+[    4.283058] usb usb2: Manufacturer: Linux 3.11.0-12-generic ehci_hcd
+[    4.283059] usb usb2: SerialNumber: 0000:00:1d.0
+[    4.283134] hub 2-0:1.0: USB hub found
+[    4.283138] hub 2-0:1.0: 2 ports detected
+[    4.283203] ehci-platform: EHCI generic platform driver
+[    4.283209] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    4.283210] ohci-platform: OHCI generic platform driver
+[    4.283218] uhci_hcd: USB Universal Host Controller Interface driver
+[    4.283325] xhci_hcd 0000:00:14.0: setting latency timer to 64
+[    4.283329] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    4.283333] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+[    4.283425] xhci_hcd 0000:00:14.0: cache line size of 64 is not supported
+[    4.283448] xhci_hcd 0000:00:14.0: irq 40 for MSI/MSI-X
+[    4.283493] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+[    4.283495] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.283496] usb usb3: Product: xHCI Host Controller
+[    4.283498] usb usb3: Manufacturer: Linux 3.11.0-12-generic xhci_hcd
+[    4.283499] usb usb3: SerialNumber: 0000:00:14.0
+[    4.283561] xHCI xhci_add_endpoint called for root hub
+[    4.283563] xHCI xhci_check_bandwidth called for root hub
+[    4.283580] hub 3-0:1.0: USB hub found
+[    4.283587] hub 3-0:1.0: 4 ports detected
+[    4.283877] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    4.283880] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 4
+[    4.283899] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003
+[    4.283901] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.283902] usb usb4: Product: xHCI Host Controller
+[    4.283904] usb usb4: Manufacturer: Linux 3.11.0-12-generic xhci_hcd
+[    4.283906] usb usb4: SerialNumber: 0000:00:14.0
+[    4.283959] xHCI xhci_add_endpoint called for root hub
+[    4.283961] xHCI xhci_check_bandwidth called for root hub
+[    4.283978] hub 4-0:1.0: USB hub found
+[    4.283985] hub 4-0:1.0: 4 ports detected
+[    4.291086] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:MSS1] at 0x60,0x64 irq 1,12
+[    4.302327] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    4.302332] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    4.302421] mousedev: PS/2 mouse device common for all mice
+[    4.304373] rtc_cmos 00:05: RTC can wake from S4
+[    4.304493] rtc_cmos 00:05: rtc core: registered rtc_cmos as rtc0
+[    4.304523] rtc_cmos 00:05: alarms up to one month, 242 bytes nvram, hpet irqs
+[    4.304571] device-mapper: uevent: version 1.0.3
+[    4.304620] device-mapper: ioctl: 4.25.0-ioctl (2013-06-26) initialised: dm-devel@redhat.com
+[    4.304768] cpuidle: using governor ladder
+[    4.304978] cpuidle: using governor menu
+[    4.304988] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.304989] EFI Variables Facility v0.08 2004-May-17
+[    4.322937] TCP: cubic registered
+[    4.323012] NET: Registered protocol family 10
+[    4.323197] NET: Registered protocol family 17
+[    4.323204] Key type dns_resolver registered
+[    4.323472] PM: Hibernation image not present or could not be loaded.
+[    4.323475] Loading module verification certificates
+[    4.324404] MODSIGN: Loaded cert 'Magrathea: Glacier signing key: fddf6943d8ac4f5b6eb0919a7a3ee3d9088b1bfa'
+[    4.324414] registered taskstats version 1
+[    4.326637] Key type trusted registered
+[    4.328858] Key type encrypted registered
+[    4.330913] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+[    4.331256] AppArmor: AppArmor sha1 policy hashing enabled
+[    4.331734]   Magic number: 10:93:733
+[    4.331746] hwmon hwmon0: hash matches
+[    4.331851] rtc_cmos 00:05: setting system clock to 2014-04-30 11:44:03 UTC (1398858243)
+[    4.333037] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    4.333038] EDD information not available.
+[    4.333858] Freeing unused kernel memory: 1364K (ffffffff81d10000 - ffffffff81e65000)
+[    4.333860] Write protecting the kernel read-only data: 12288k
+[    4.335839] Freeing unused kernel memory: 1040K (ffff8800026fc000 - ffff880002800000)
+[    4.337270] Freeing unused kernel memory: 836K (ffff880002b2f000 - ffff880002c00000)
+[    4.347187] systemd-udevd[146]: starting version 204
+[    4.356439] video: module verification failed: signature and/or required key missing - tainting kernel
+[    4.358722] [drm] Initialized drm 1.1.0 20060810
+[    4.362031] ahci 0000:00:1f.2: version 3.0
+[    4.362188] ahci 0000:00:1f.2: irq 41 for MSI/MSI-X
+[    4.362212] ahci: SSS flag set, parallel bus scan disabled
+[    4.374994] alx 0000:01:00.0 eth0: Qualcomm Atheros AR816x/AR817x Ethernet [20:1a:06:2c:24:50]
+[    4.375193] ahci 0000:00:1f.2: AHCI 0001.0300 32 slots 6 ports 6 Gbps 0x5 impl SATA mode
+[    4.375198] ahci 0000:00:1f.2: flags: 64bit ncq stag pm led clo pio slum part ems apst 
+[    4.375208] ahci 0000:00:1f.2: setting latency timer to 64
+[    4.383723] scsi0 : ahci
+[    4.383813] scsi1 : ahci
+[    4.383892] scsi2 : ahci
+[    4.383957] scsi3 : ahci
+[    4.384052] scsi4 : ahci
+[    4.384132] scsi5 : ahci
+[    4.384172] ata1: SATA max UDMA/133 abar m2048@0xe0617000 port 0xe0617100 irq 41
+[    4.384173] ata2: DUMMY
+[    4.384176] ata3: SATA max UDMA/133 abar m2048@0xe0617000 port 0xe0617200 irq 41
+[    4.384176] ata4: DUMMY
+[    4.384177] ata5: DUMMY
+[    4.384178] ata6: DUMMY
+[    4.384963] [drm] Memory usable by graphics device = 2048M
+[    4.384966] checking generic (d0000000 410000) vs hw (d0000000 10000000)
+[    4.384968] fb: conflicting fb hw usage inteldrmfb vs EFI VGA - removing generic driver
+[    4.384978] Console: switching to colour dummy device 80x25
+[    4.385058] i915 0000:00:02.0: setting latency timer to 64
+[    4.410203] i915 0000:00:02.0: irq 42 for MSI/MSI-X
+[    4.410210] [drm] Supports vblank timestamp caching Rev 1 (10.10.2010).
+[    4.410211] [drm] Driver supports precise vblank timestamp query.
+[    4.410223] ACPI Warning: \_SB_.PCI0.GFX0._DSM: Argument #4 type mismatch - Found [Integer], ACPI requires [Package] (20130517/nsarguments-95)
+[    4.410249] ACPI Warning: \_SB_.PCI0.GFX0._DSM: Argument #4 type mismatch - Found [Integer], ACPI requires [Package] (20130517/nsarguments-95)
+[    4.410297] vgaarb: device changed decodes: PCI:0000:00:02.0,olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    4.456909] fbcon: inteldrmfb (fb0) is primary device
+[    4.579220] usb 1-1: new high-speed USB device number 2 using ehci-pci
+[    4.703281] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    4.709571] ata1.00: ATA-8: ST1000LM024 HN-M101MBB, 2AR20002, max UDMA/100
+[    4.709573] ata1.00: 1953525168 sectors, multi 0: LBA48 NCQ (depth 31/32)
+[    4.711635] usb 1-1: New USB device found, idVendor=8087, idProduct=0024
+[    4.711636] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    4.711912] hub 1-1:1.0: USB hub found
+[    4.712008] hub 1-1:1.0: 6 ports detected
+[    4.715868] ata1.00: configured for UDMA/100
+[    4.716027] scsi 0:0:0:0: Direct-Access     ATA      ST1000LM024 HN-M 2AR2 PQ: 0 ANSI: 5
+[    4.716126] sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/931 GiB)
+[    4.716127] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[    4.716151] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    4.716163] sd 0:0:0:0: [sda] Write Protect is off
+[    4.716164] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    4.716175] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.770205]  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7 sda8 sda9 sda10
+[    4.770839] sd 0:0:0:0: [sda] Attached SCSI disk
+[    4.823360] usb 2-1: new high-speed USB device number 2 using ehci-pci
+[    4.955942] usb 2-1: New USB device found, idVendor=8087, idProduct=0024
+[    4.955945] usb 2-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    4.956335] hub 2-1:1.0: USB hub found
+[    4.956405] hub 2-1:1.0: 6 ports detected
+[    5.035577] ata3: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    5.039149] ata3.00: ATAPI: MATSHITA DVD-RAM UJ8E1, 8.71, max UDMA/100
+[    5.047595] ata3.00: configured for UDMA/100
+[    5.055344] scsi 2:0:0:0: CD-ROM            MATSHITA DVD-RAM UJ8E1    8.71 PQ: 0 ANSI: 5
+[    5.064679] sr0: scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
+[    5.064681] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    5.064889] sr 2:0:0:0: Attached scsi CD-ROM sr0
+[    5.065012] sr 2:0:0:0: Attached scsi generic sg1 type 5
+[    5.123550] usb 3-4: new high-speed USB device number 2 using xhci_hcd
+[    5.163540] tsc: Refined TSC clocksource calibration: 2095.234 MHz
+[    5.178003] usb 3-4: New USB device found, idVendor=0bda, idProduct=5728
+[    5.178004] usb 3-4: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+[    5.178005] usb 3-4: Product: Lenovo EasyCamera
+[    5.178006] usb 3-4: Manufacturer: CF0D9RS73
+[    5.178007] usb 3-4: SerialNumber: 200901010001
+[    5.251694] usb 1-1.2: new low-speed USB device number 3 using ehci-pci
+[    5.283682] Console: switching to colour frame buffer device 170x48
+[    5.285676] i915 0000:00:02.0: fb0: inteldrmfb frame buffer device
+[    5.285677] i915 0000:00:02.0: registered panic notifier
+[    5.287351] acpi device:3d: registered as cooling_device8
+[    5.287455] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    5.287488] input: Video Bus as /devices/LNXSYSTM:00/device:00/PNP0A08:00/LNXVIDEO:00/input/input4
+[    5.287539] [drm] Initialized i915 1.6.0 20080730 for 0000:00:02.0 on minor 0
+[    5.348366] usb 1-1.2: New USB device found, idVendor=04f3, idProduct=0212
+[    5.348372] usb 1-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+[    5.348376] usb 1-1.2: Product: PS/2+USB Mouse
+[    5.351078] hidraw: raw HID events driver (C) Jiri Kosina
+[    5.354771] usbcore: registered new interface driver usbhid
+[    5.354772] usbhid: USB HID core driver
+[    5.355920] input: PS/2+USB Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input5
+[    5.356009] hid-generic 0003:04F3:0212.0001: input,hidraw0: USB HID v1.11 Mouse [PS/2+USB Mouse] on usb-0000:00:1a.0-1.2/input0
+[    5.423985] usb 1-1.3: new full-speed USB device number 4 using ehci-pci
+[    5.520083] usb 1-1.3: New USB device found, idVendor=8087, idProduct=07da
+[    5.520085] usb 1-1.3: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    5.591922] usb 1-1.4: new high-speed USB device number 5 using ehci-pci
+[    5.684676] usb 1-1.4: New USB device found, idVendor=0bda, idProduct=0129
+[    5.684679] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    5.684680] usb 1-1.4: Product: USB2.0-CRW
+[    5.684681] usb 1-1.4: Manufacturer: Generic
+[    5.684682] usb 1-1.4: SerialNumber: 20100201396000000
+[    5.856223] [drm] Enabling RC6 states: RC6 on, RC6p on, RC6pp off
+[    6.164446] Switched to clocksource tsc
+[    6.988610] EXT4-fs (sda9): mounted filesystem with ordered data mode. Opts: (null)
+[    9.426579] Adding 1500156k swap on /dev/sda7.  Priority:-1 extents:1 across:1500156k FS
+[   10.181584] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   10.489727] systemd-udevd[425]: starting version 204
+[   11.354152] lp: driver loaded but no devices found
+[   12.448215] EXT4-fs (sda9): re-mounted. Opts: errors=remount-ro
+[   12.735219] microcode: CPU0 sig=0x306a9, pf=0x10, revision=0x15
+[   13.005070] input: Ideapad extra buttons as /devices/platform/ideapad/input/input6
+[   13.022920] ACPI Warning: 0x0000000000000428-0x000000000000042f SystemIO conflicts with Region \PMIO 1 (20130517/utaddress-251)
+[   13.022927] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[   13.022934] ACPI Warning: 0x0000000000000530-0x000000000000053f SystemIO conflicts with Region \GPIO 1 (20130517/utaddress-251)
+[   13.022938] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[   13.022939] ACPI Warning: 0x0000000000000500-0x000000000000052f SystemIO conflicts with Region \GPIO 1 (20130517/utaddress-251)
+[   13.022943] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[   13.022944] lpc_ich: Resource conflict(s) found affecting gpio_ich
+[   13.091510] cfg80211: Calling CRDA to update world regulatory domain
+[   13.294197] device-mapper: multipath: version 1.5.1 loaded
+[   13.363584] mei_me 0000:00:16.0: setting latency timer to 64
+[   13.363627] mei_me 0000:00:16.0: irq 43 for MSI/MSI-X
+[   13.443375] Intel(R) Wireless WiFi driver for Linux, in-tree:
+[   13.443378] Copyright(c) 2003-2013 Intel Corporation
+[   13.443472] iwlwifi 0000:02:00.0: can't disable ASPM; OS doesn't have ASPM control
+[   13.443606] iwlwifi 0000:02:00.0: irq 44 for MSI/MSI-X
+[   13.487712] systemd-udevd[591]: failed to execute '/lib/udev/mtp-probe' 'mtp-probe /sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.4 1 5': No such file or directory
+[   13.623335] systemd-udevd[604]: failed to execute '/lib/udev/mtp-probe' 'mtp-probe /sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2 1 3': No such file or directory
+[   13.678212] iwlwifi 0000:02:00.0: loaded firmware version 18.168.6.1 op_mode iwldvm
+[   13.813902] microcode: CPU1 sig=0x306a9, pf=0x10, revision=0x15
+[   13.838882] microcode: CPU2 sig=0x306a9, pf=0x10, revision=0x15
+[   13.839202] microcode: CPU3 sig=0x306a9, pf=0x10, revision=0x15
+[   13.839522] microcode: CPU4 sig=0x306a9, pf=0x10, revision=0x15
+[   13.839828] microcode: CPU5 sig=0x306a9, pf=0x10, revision=0x15
+[   13.840141] microcode: CPU6 sig=0x306a9, pf=0x10, revision=0x15
+[   13.840459] microcode: CPU7 sig=0x306a9, pf=0x10, revision=0x15
+[   13.840786] microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+[   14.010050] psmouse serio1: synaptics: Touchpad model: 1, fw: 7.5, id: 0x1e0b1, caps: 0xd00073/0x240000/0xa0400, board id: 1695, fw id: 739436
+[   14.068229] input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio1/input/input7
+[   14.103427] EXT4-fs (sda8): mounted filesystem with ordered data mode. Opts: (null)
+[   14.327894] iwlwifi 0000:02:00.0: CONFIG_IWLWIFI_DEBUG disabled
+[   14.327897] iwlwifi 0000:02:00.0: CONFIG_IWLWIFI_DEBUGFS enabled
+[   14.327899] iwlwifi 0000:02:00.0: CONFIG_IWLWIFI_DEVICE_TRACING enabled
+[   14.327900] iwlwifi 0000:02:00.0: CONFIG_IWLWIFI_P2P disabled
+[   14.327902] iwlwifi 0000:02:00.0: Detected Intel(R) Centrino(R) Wireless-N 135 BGN, REV=0x120
+[   14.328004] iwlwifi 0000:02:00.0: L1 Enabled; Disabling L0S
+[   14.342114] Linux video capture interface: v2.00
+[   14.378167] ieee80211 phy0: Selected rate control algorithm 'iwl-agn-rs'
+[   14.478063] uvcvideo: Found UVC 1.00 device Lenovo EasyCamera (0bda:5728)
+[   14.480434] input: Lenovo EasyCamera as /devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/input/input8
+[   14.480489] usbcore: registered new interface driver uvcvideo
+[   14.480490] USB Video Class driver (1.1.1)
+[   14.808255] rts5139: module is from the staging directory, the quality is unknown, you have been warned.
+[   14.811613] scsi6 : SCSI emulation for RTS5139 USB card reader
+[   14.811697] usbcore: registered new interface driver rts5139
+[   14.811737] scsi 6:0:0:0: Direct-Access     Generic- xD/SD/M.S.       1.00 PQ: 0 ANSI: 0 CCS
+[   14.812134] sd 6:0:0:0: Attached scsi generic sg2 type 0
+[   14.832172] snd_hda_intel 0000:00:1b.0: irq 45 for MSI/MSI-X
+[   14.887187] hda_codec: CX20757: BIOS auto-probing.
+[   14.887425] autoconfig: line_outs=1 (0x17/0x0/0x0/0x0/0x0) type:speaker
+[   14.887427]    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[   14.887428]    hp_outs=1 (0x16/0x0/0x0/0x0/0x0)
+[   14.887429]    mono: mono_out=0x0
+[   14.887430]    inputs:
+[   14.887431]      Internal Mic=0x1a
+[   14.887432]      Mic=0x19
+[   14.888211] hda_codec: Enable sync_write for stable communication
+[   14.889260] sd 6:0:0:0: [sdb] Attached SCSI removable disk
+[   14.915074] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1b.0/sound/card0/input9
+[   14.915129] input: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1b.0/sound/card0/input10
+[   14.915174] input: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input11
+[   15.109436] Bluetooth: Core ver 2.16
+[   15.109449] NET: Registered protocol family 31
+[   15.109450] Bluetooth: HCI device and connection manager initialized
+[   15.109456] Bluetooth: HCI socket layer initialized
+[   15.109458] Bluetooth: L2CAP socket layer initialized
+[   15.109461] Bluetooth: SCO socket layer initialized
+[   15.283976] usbcore: registered new interface driver btusb
+[   15.955988] cfg80211: World regulatory domain updated:
+[   15.955992] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[   15.955993] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   15.955994] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   15.955995] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
+[   15.955996] cfg80211:   (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   15.955997] cfg80211:   (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   18.712067] init: failsafe main process (834) killed by TERM signal
+[   22.214716] Bluetooth: RFCOMM TTY layer initialized
+[   22.214728] Bluetooth: RFCOMM socket layer initialized
+[   22.214729] Bluetooth: RFCOMM ver 1.11
+[   22.532472] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   22.532475] Bluetooth: BNEP filters: protocol multicast
+[   22.532481] Bluetooth: BNEP socket layer initialized
+[   23.706772] init: avahi-cups-reload main process (977) terminated with status 1
+[   24.056861] ppdev: user-space parallel port driver
+[   31.719124] alx 0000:01:00.0: irq 46 for MSI/MSI-X
+[   31.719436] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   31.720312] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   31.721556] iwlwifi 0000:02:00.0: L1 Enabled; Disabling L0S
+[   31.729079] iwlwifi 0000:02:00.0: Radio type=0x0-0x0-0x0
+[   31.795604] iwlwifi 0000:02:00.0: L1 Enabled; Disabling L0S
+[   31.803207] iwlwifi 0000:02:00.0: Radio type=0x0-0x0-0x0
+[   31.864022] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   31.864337] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   33.456804] wlan0: authenticate with 30:87:30:e0:99:8f
+[   33.470960] wlan0: send auth to 30:87:30:e0:99:8f (try 1/3)
+[   33.475764] wlan0: authenticated
+[   33.479333] wlan0: associate with 30:87:30:e0:99:8f (try 1/3)
+[   33.486863] wlan0: RX AssocResp from 30:87:30:e0:99:8f (capab=0x411 status=0 aid=3)
+[   33.511408] wlan0: associated
+[   33.511465] wlan0: Limiting TX power to 20 (20 - 0) dBm as advertised by 30:87:30:e0:99:8f
+[   33.511477] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   33.511531] cfg80211: Calling CRDA for country: ES
+[   33.513460] cfg80211: Regulatory domain changed to country: ES
+[   33.513462] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[   33.513463] cfg80211:   (2400000 KHz - 2483500 KHz @ 40000 KHz), (N/A, 2000 mBm)
+[   33.513464] cfg80211:   (5150000 KHz - 5250000 KHz @ 40000 KHz), (N/A, 2000 mBm)
+[   33.513465] cfg80211:   (5250000 KHz - 5350000 KHz @ 40000 KHz), (N/A, 2000 mBm)
+[   33.513466] cfg80211:   (5470000 KHz - 5725000 KHz @ 40000 KHz), (N/A, 2698 mBm)
+[   33.513467] cfg80211:   (57240000 KHz - 65880000 KHz @ 2160000 KHz), (N/A, 4000 mBm)
+[   36.532661] vboxdrv: Found 8 processor cores.
+[   36.532839] vboxdrv: fAsync=0 offMin=0x17d offMax=0xfea
+[   36.532889] vboxdrv: TSC mode is 'synchronous', kernel timer mode is 'normal'.
+[   36.532890] vboxdrv: Successfully loaded version 4.3.10 (interface 0x001a0007).
+[   37.098727] vboxpci: IOMMU not found (not registered)
+
+
+----------------------	lsmod	----------------------
+
+Module                  Size  Used by
+pci_stub               12622  1 
+vboxpci                23194  0 
+vboxnetadp             25670  0 
+vboxnetflt             27613  0 
+vboxdrv               339502  3 vboxnetadp,vboxnetflt,vboxpci
+parport_pc             32701  0 
+ppdev                  17671  0 
+bnep                   19564  2 
+rfcomm                 69070  12 
+binfmt_misc            17468  1 
+nls_iso8859_1          12713  1 
+btusb                  28267  0 
+x86_pkg_temp_thermal    14162  0 
+intel_powerclamp       14705  0 
+bluetooth             371874  22 bnep,btusb,rfcomm
+kvm_intel             138538  0 
+kvm                   431315  1 kvm_intel
+snd_hda_codec_hdmi     41276  1 
+snd_hda_codec_conexant    56945  1 
+snd_hda_intel          48171  3 
+rts5139               331166  0 
+snd_hda_codec         188738  3 snd_hda_codec_hdmi,snd_hda_codec_conexant,snd_hda_intel
+crct10dif_pclmul       14289  0 
+crc32_pclmul           13113  0 
+ghash_clmulni_intel    13259  0 
+uvcvideo               80885  0 
+aesni_intel            55624  3 
+snd_hwdep              13602  1 snd_hda_codec
+aes_x86_64             17131  1 aesni_intel
+snd_pcm               102033  3 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel
+lrw                    13257  1 aesni_intel
+arc4                   12608  2 
+videobuf2_vmalloc      13216  1 uvcvideo
+gf128mul               14951  1 lrw
+videobuf2_memops       13362  1 videobuf2_vmalloc
+videobuf2_core         40469  1 uvcvideo
+glue_helper            13990  1 aesni_intel
+videodev              133390  2 uvcvideo,videobuf2_core
+iwldvm                237440  0 
+snd_page_alloc         18710  2 snd_pcm,snd_hda_intel
+joydev                 17377  0 
+snd_seq_midi           13324  0 
+snd_seq_midi_event     14899  1 snd_seq_midi
+ablk_helper            13597  1 aesni_intel
+mac80211              596969  1 iwldvm
+cryptd                 20329  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+snd_rawmidi            30095  1 snd_seq_midi
+snd_seq                61560  2 snd_seq_midi_event,snd_seq_midi
+iwlwifi               165398  1 iwldvm
+mei_me                 18421  0 
+snd_seq_device         14497  3 snd_seq,snd_rawmidi,snd_seq_midi
+dm_multipath           22843  0 
+scsi_dh                14882  1 dm_multipath
+snd_timer              29433  2 snd_pcm,snd_seq
+snd                    69141  17 snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_hda_codec_conexant,snd_pcm,snd_seq,snd_rawmidi,snd_hda_codec,snd_hda_intel,snd_seq_device,snd_seq_midi
+mei                    77692  1 mei_me
+soundcore              12680  1 snd
+cfg80211              479757  3 iwlwifi,mac80211,iwldvm
+lpc_ich                21080  0 
+mac_hid                13205  0 
+ideapad_laptop         18342  0 
+psmouse                97626  0 
+sparse_keymap          13948  1 ideapad_laptop
+serio_raw              13413  0 
+microcode              23518  0 
+coretemp               13435  0 
+lp                     17759  0 
+parport                42299  3 lp,ppdev,parport_pc
+dm_mirror              22056  0 
+dm_region_hash         20784  1 dm_mirror
+dm_log                 18411  2 dm_region_hash,dm_mirror
+hid_generic            12548  0 
+usbhid                 53014  0 
+hid                   101512  2 hid_generic,usbhid
+i915                  655752  4 
+alx                    32255  0 
+ahci                   25819  4 
+mdio                   13807  1 alx
+libahci                31898  1 ahci
+i2c_algo_bit           13413  1 i915
+drm_kms_helper         52651  1 i915
+drm                   296739  5 i915,drm_kms_helper
+video                  19318  1 i915
+
+
+----------------------	lspci	----------------------
+
+00:00.0 Host bridge: Intel Corporation 3rd Gen Core processor DRAM Controller (rev 09)
+00:02.0 VGA compatible controller: Intel Corporation 3rd Gen Core processor Graphics Controller (rev 09)
+00:14.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB xHCI Host Controller (rev 04)
+00:16.0 Communication controller: Intel Corporation 7 Series/C210 Series Chipset Family MEI Controller #1 (rev 04)
+00:1a.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #2 (rev 04)
+00:1b.0 Audio device: Intel Corporation 7 Series/C210 Series Chipset Family High Definition Audio Controller (rev 04)
+00:1c.0 PCI bridge: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 1 (rev c4)
+00:1c.1 PCI bridge: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 2 (rev c4)
+00:1d.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #1 (rev 04)
+00:1f.0 ISA bridge: Intel Corporation HM76 Express Chipset LPC Controller (rev 04)
+00:1f.2 SATA controller: Intel Corporation 7 Series Chipset Family 6-port SATA Controller [AHCI mode] (rev 04)
+00:1f.3 SMBus: Intel Corporation 7 Series/C210 Series Chipset Family SMBus Controller (rev 04)
+01:00.0 Ethernet controller: Qualcomm Atheros QCA8172 Fast Ethernet (rev 10)
+02:00.0 Network controller: Intel Corporation Centrino Wireless-N 135 (rev c4)
+
+
+----------------------	lspci -vvv	----------------------
+
+00:00.0 Host bridge: Intel Corporation 3rd Gen Core processor DRAM Controller (rev 09)
+	Subsystem: Lenovo Device 3977
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
+
+00:02.0 VGA compatible controller: Intel Corporation 3rd Gen Core processor Graphics Controller (rev 09) (prog-if 00 [VGA controller])
+	Subsystem: Lenovo Device 3977
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 42
+	Region 0: Memory at e0000000 (64-bit, non-prefetchable) [size=4M]
+	Region 2: Memory at d0000000 (64-bit, prefetchable) [size=256M]
+	Region 4: I/O ports at 3000 [size=64]
+	Expansion ROM at <unassigned> [disabled]
+	Capabilities: [90] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: feeff00c  Data: 41b1
+	Capabilities: [d0] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a4] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: i915
+
+00:14.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB xHCI Host Controller (rev 04) (prog-if 30 [XHCI])
+	Subsystem: Lenovo Device 3977
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 40
+	Region 0: Memory at e0600000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: [70] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [80] MSI: Enable+ Count=1/8 Maskable- 64bit+
+		Address: 00000000fee3000c  Data: 4181
+	Kernel driver in use: xhci_hcd
+
+00:16.0 Communication controller: Intel Corporation 7 Series/C210 Series Chipset Family MEI Controller #1 (rev 04)
+	Subsystem: Lenovo Device 3977
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 43
+	Region 0: Memory at e0614000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [8c] MSI: Enable+ Count=1/1 Maskable- 64bit+
+		Address: 00000000feeff00c  Data: 41c1
+	Kernel driver in use: mei_me
+
+00:1a.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #2 (rev 04) (prog-if 20 [EHCI])
+	Subsystem: Lenovo Device 3977
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at e0619000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP+
+	Kernel driver in use: ehci-pci
+
+00:1b.0 Audio device: Intel Corporation 7 Series/C210 Series Chipset Family High Definition Audio Controller (rev 04)
+	Subsystem: Lenovo Device 3977
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 45
+	Region 0: Memory at e0610000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=55mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [60] MSI: Enable+ Count=1/1 Maskable- 64bit+
+		Address: 00000000feeff00c  Data: 4122
+	Capabilities: [70] Express (v1) Root Complex Integrated Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag- RBE- FLReset+
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #0, Speed unknown, Width x0, ASPM unknown, Latency L0 <64ns, L1 <1us
+			ClockPM- Surprise- LLActRep- BwNot-
+		LnkCtl:	ASPM Disabled; Disabled- Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed unknown, Width x0, TrErr- Train- SlotClk- DLActive- BWMgmt- ABWMgmt-
+	Capabilities: [100 v1] Virtual Channel
+		Caps:	LPEVC=0 RefClk=100ns PATEntryBits=1
+		Arb:	Fixed- WRR32- WRR64- WRR128-
+		Ctrl:	ArbSelect=Fixed
+		Status:	InProgress-
+		VC0:	Caps:	PATOffset=00 MaxTimeSlots=1 RejSnoopTrans-
+			Arb:	Fixed- WRR32- WRR64- WRR128- TWRR128- WRR256-
+			Ctrl:	Enable+ ID=0 ArbSelect=Fixed TC/VC=01
+			Status:	NegoPending- InProgress-
+		VC1:	Caps:	PATOffset=00 MaxTimeSlots=1 RejSnoopTrans-
+			Arb:	Fixed- WRR32- WRR64- WRR128- TWRR128- WRR256-
+			Ctrl:	Enable+ ID=1 ArbSelect=Fixed TC/VC=22
+			Status:	NegoPending- InProgress-
+	Capabilities: [130 v1] Root Complex Link
+		Desc:	PortNumber=0f ComponentID=00 EltType=Config
+		Link0:	Desc:	TargetPort=00 TargetComponent=00 AssocRCRB- LinkType=MemMapped LinkValid+
+			Addr:	00000000fed1c000
+	Kernel driver in use: snd_hda_intel
+
+00:1c.0 PCI bridge: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 1 (rev c4) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 00002000-00002fff
+	Memory behind bridge: e0500000-e05fffff
+	Prefetchable memory behind bridge: 00000000fff00000-00000000000fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #1, Speed 5GT/s, Width x1, ASPM L0s L1, Latency L0 <512ns, L1 <16us
+			ClockPM- Surprise- LLActRep+ BwNot-
+		LnkCtl:	ASPM L0s L1 Enabled; RCB 64 bytes Disabled- Retrain- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive+ BWMgmt+ ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #0, PowerLimit 10.000W; Interlock- NoCompl+
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
+			Changed: MRL- PresDet- LinkState+
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BC, TimeoutDis+ ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete-, EqualizationPhase1-
+			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+		Address: 00000000  Data: 0000
+	Capabilities: [90] Subsystem: Lenovo Device 3977
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pcieport
+
+00:1c.1 PCI bridge: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 2 (rev c4) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	I/O behind bridge: 0000f000-00000fff
+	Memory behind bridge: e0400000-e04fffff
+	Prefetchable memory behind bridge: 00000000fff00000-00000000000fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #2, Speed 5GT/s, Width x1, ASPM L0s L1, Latency L0 <512ns, L1 <16us
+			ClockPM- Surprise- LLActRep+ BwNot-
+		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- Retrain- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive+ BWMgmt+ ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+			Slot #1, PowerLimit 10.000W; Interlock- NoCompl+
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
+			Changed: MRL- PresDet- LinkState+
+		RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna- CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BC, TimeoutDis+ ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete-, EqualizationPhase1-
+			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+		Address: 00000000  Data: 0000
+	Capabilities: [90] Subsystem: Lenovo Device 3977
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: pcieport
+
+00:1d.0 USB controller: Intel Corporation 7 Series/C210 Series Chipset Family USB Enhanced Host Controller #1 (rev 04) (prog-if 20 [EHCI])
+	Subsystem: Lenovo Device 3977
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 23
+	Region 0: Memory at e0618000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ehci-pci
+
+00:1f.0 ISA bridge: Intel Corporation HM76 Express Chipset LPC Controller (rev 04)
+	Subsystem: Lenovo Device 3977
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
+	Kernel driver in use: lpc_ich
+
+00:1f.2 SATA controller: Intel Corporation 7 Series Chipset Family 6-port SATA Controller [AHCI mode] (rev 04) (prog-if 01 [AHCI 1.0])
+	Subsystem: Lenovo Device 3977
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 41
+	Region 0: I/O ports at 3088 [size=8]
+	Region 1: I/O ports at 3094 [size=4]
+	Region 2: I/O ports at 3080 [size=8]
+	Region 3: I/O ports at 3090 [size=4]
+	Region 4: I/O ports at 3060 [size=32]
+	Region 5: Memory at e0617000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee0c00c  Data: 41a1
+	Capabilities: [70] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a8] SATA HBA v1.0 BAR4 Offset=00000004
+	Capabilities: [b0] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ahci
+
+00:1f.3 SMBus: Intel Corporation 7 Series/C210 Series Chipset Family SMBus Controller (rev 04)
+	Subsystem: Lenovo Device 3977
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin C routed to IRQ 0
+	Region 0: Memory at e0615000 (64-bit, non-prefetchable) [size=256]
+	Region 4: I/O ports at 3040 [size=32]
+
+01:00.0 Ethernet controller: Qualcomm Atheros QCA8172 Fast Ethernet (rev 10)
+	Subsystem: Lenovo Device 3802
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 46
+	Region 0: Memory at e0500000 (64-bit, non-prefetchable) [size=256K]
+	Region 2: I/O ports at 2000 [size=128]
+	Capabilities: [40] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Express (v1) Endpoint, MSI 00
+		DevCap:	MaxPayload 4096 bytes, PhantFunc 0, Latency L0s unlimited, L1 unlimited
+			ExtTag- AttnBtn+ AttnInd+ PwrInd+ RBE+ FLReset-
+		DevCtl:	Report errors: Correctable+ Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Latency L0 unlimited, L1 unlimited
+			ClockPM+ Surprise- LLActRep- BwNot-
+		LnkCtl:	ASPM L0s L1 Enabled; RCB 64 bytes Disabled- Retrain- CommClk+
+			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+	Capabilities: [c0] MSI: Enable+ Count=1/16 Maskable+ 64bit+
+		Address: 00000000feeff00c  Data: 4142
+		Masking: 0000fffe  Pending: 00000000
+	Capabilities: [d8] MSI-X: Enable- Count=16 Masked-
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [100 v1] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP- SDES+ TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr+ BadTLP+ BadDLLP+ Rollover- Timeout+ NonFatalErr-
+		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap+ CGenEn- ChkCap+ ChkEn-
+	Capabilities: [180 v1] Device Serial Number ff-2c-24-50-20-1a-06-ff
+	Kernel driver in use: alx
+
+02:00.0 Network controller: Intel Corporation Centrino Wireless-N 135 (rev c4)
+	Subsystem: Intel Corporation Centrino Wireless-N 135 BGN
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 44
+	Region 0: Memory at e0400000 (64-bit, non-prefetchable) [size=8K]
+	Capabilities: [c8] Power Management version 3
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+		Address: 00000000fee0100c  Data: 41d1
+	Capabilities: [e0] Express (v1) Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <512ns, L1 unlimited
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset+
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop+ FLReset-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x1, ASPM L0s L1, Latency L0 <4us, L1 <32us
+			ClockPM+ Surprise- LLActRep- BwNot-
+		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- Retrain- CommClk+
+			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+	Capabilities: [100 v1] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES- TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [140 v1] Device Serial Number 0c-d2-92-ff-ff-7a-34-b0
+	Kernel driver in use: iwlwifi
+
+
+
+----------------------	lsusb	----------------------
+
+Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 005: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 004: ID 8087:07da Intel Corp. 
+Bus 001 Device 003: ID 04f3:0212 Elan Microelectronics Corp. Laser Mouse
+Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 002: ID 0bda:5728 Realtek Semiconductor Corp. 
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+
+----------------------	lsusb -v	----------------------
+
+
+Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         1 Single TT
+  bMaxPacketSize0        64
+  idVendor           0x8087 Intel Corp.
+  idProduct          0x0024 Integrated Rate Matching Hub
+  bcdDevice            0.00
+  iManufacturer           0 
+  iProduct                0 
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           25
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         9 Hub
+      bInterfaceSubClass      0 Unused
+      bInterfaceProtocol      0 Full speed (or root) hub
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0001  1x 1 bytes
+        bInterval              12
+Hub Descriptor:
+  bLength               9
+  bDescriptorType      41
+  nNbrPorts             6
+  wHubCharacteristic 0x0009
+    Per-port power switching
+    Per-port overcurrent protection
+    TT think time 8 FS bits
+  bPwrOn2PwrGood       50 * 2 milli seconds
+  bHubContrCurrent      0 milli Ampere
+  DeviceRemovable    0x00
+  PortPwrCtrlMask    0xff
+ Hub Port Status:
+   Port 1: 0000.0100 power
+   Port 2: 0000.0100 power
+   Port 3: 0000.0100 power
+   Port 4: 0000.0100 power
+   Port 5: 0000.0100 power
+   Port 6: 0000.0100 power
+Device Qualifier (for other device speed):
+  bLength                10
+  bDescriptorType         6
+  bcdUSB               2.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         0 Full speed (or root) hub
+  bMaxPacketSize0        64
+  bNumConfigurations      1
+Device Status:     0x0001
+  Self Powered
+
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         0 Full speed (or root) hub
+  bMaxPacketSize0        64
+  idVendor           0x1d6b Linux Foundation
+  idProduct          0x0002 2.0 root hub
+  bcdDevice            3.11
+  iManufacturer           3 Linux 3.11.0-12-generic ehci_hcd
+  iProduct                2 EHCI Host Controller
+  iSerial                 1 0000:00:1d.0
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           25
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         9 Hub
+      bInterfaceSubClass      0 Unused
+      bInterfaceProtocol      0 Full speed (or root) hub
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0004  1x 4 bytes
+        bInterval              12
+Hub Descriptor:
+  bLength               9
+  bDescriptorType      41
+  nNbrPorts             2
+  wHubCharacteristic 0x000a
+    No power switching (usb 1.0)
+    Per-port overcurrent protection
+  bPwrOn2PwrGood       10 * 2 milli seconds
+  bHubContrCurrent      0 milli Ampere
+  DeviceRemovable    0x02
+  PortPwrCtrlMask    0xff
+ Hub Port Status:
+   Port 1: 0000.0507 highspeed power suspend enable connect
+   Port 2: 0000.0100 power
+Device Status:     0x0001
+  Self Powered
+
+Bus 001 Device 005: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass          255 Vendor Specific Class
+  bDeviceSubClass       255 Vendor Specific Subclass
+  bDeviceProtocol       255 Vendor Specific Protocol
+  bMaxPacketSize0        64
+  idVendor           0x0bda Realtek Semiconductor Corp.
+  idProduct          0x0129 RTS5129 Card Reader Controller
+  bcdDevice           39.60
+  iManufacturer           1 Generic
+  iProduct                2 USB2.0-CRW
+  iSerial                 3 20100201396000000
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           39
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          4 CARD READER
+    bmAttributes         0xa0
+      (Bus Powered)
+      Remote Wakeup
+    MaxPower              500mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           3
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      6 
+      bInterfaceProtocol     80 
+      iInterface              5 Bulk-In, Bulk-Out, Interface
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x01  EP 1 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x82  EP 2 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0003  1x 3 bytes
+        bInterval              10
+Device Qualifier (for other device speed):
+  bLength                10
+  bDescriptorType         6
+  bcdUSB               2.00
+  bDeviceClass            0 (Defined at Interface level)
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  bNumConfigurations      1
+Device Status:     0x0000
+  (Bus Powered)
+
+Bus 001 Device 004: ID 8087:07da Intel Corp. 
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass          224 Wireless
+  bDeviceSubClass         1 Radio Frequency
+  bDeviceProtocol         1 Bluetooth
+  bMaxPacketSize0        64
+  idVendor           0x8087 Intel Corp.
+  idProduct          0x07da 
+  bcdDevice           78.69
+  iManufacturer           0 
+  iProduct                0 
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength          177
+    bNumInterfaces          2
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           3
+      bInterfaceClass       224 Wireless
+      bInterfaceSubClass      1 Radio Frequency
+      bInterfaceProtocol      1 Bluetooth
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0010  1x 16 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x82  EP 2 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass       224 Wireless
+      bInterfaceSubClass      1 Radio Frequency
+      bInterfaceProtocol      1 Bluetooth
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x03  EP 3 OUT
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0000  1x 0 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0000  1x 0 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       1
+      bNumEndpoints           2
+      bInterfaceClass       224 Wireless
+      bInterfaceSubClass      1 Radio Frequency
+      bInterfaceProtocol      1 Bluetooth
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x03  EP 3 OUT
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0009  1x 9 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0009  1x 9 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       2
+      bNumEndpoints           2
+      bInterfaceClass       224 Wireless
+      bInterfaceSubClass      1 Radio Frequency
+      bInterfaceProtocol      1 Bluetooth
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x03  EP 3 OUT
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0011  1x 17 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0011  1x 17 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       3
+      bNumEndpoints           2
+      bInterfaceClass       224 Wireless
+      bInterfaceSubClass      1 Radio Frequency
+      bInterfaceProtocol      1 Bluetooth
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x03  EP 3 OUT
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0019  1x 25 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0019  1x 25 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       4
+      bNumEndpoints           2
+      bInterfaceClass       224 Wireless
+      bInterfaceSubClass      1 Radio Frequency
+      bInterfaceProtocol      1 Bluetooth
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x03  EP 3 OUT
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0021  1x 33 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0021  1x 33 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       5
+      bNumEndpoints           2
+      bInterfaceClass       224 Wireless
+      bInterfaceSubClass      1 Radio Frequency
+      bInterfaceProtocol      1 Bluetooth
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x03  EP 3 OUT
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0031  1x 49 bytes
+        bInterval               1
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            1
+          Transfer Type            Isochronous
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0031  1x 49 bytes
+        bInterval               1
+Device Status:     0x0001
+  Self Powered
+
+Bus 001 Device 003: ID 04f3:0212 Elan Microelectronics Corp. Laser Mouse
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               1.10
+  bDeviceClass            0 (Defined at Interface level)
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0         8
+  idVendor           0x04f3 Elan Microelectronics Corp.
+  idProduct          0x0212 Laser Mouse
+  bcdDevice           23.24
+  iManufacturer           0 
+  iProduct                2 PS/2+USB Mouse
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           34
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xa0
+      (Bus Powered)
+      Remote Wakeup
+    MaxPower              100mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         3 Human Interface Device
+      bInterfaceSubClass      1 Boot Interface Subclass
+      bInterfaceProtocol      2 Mouse
+      iInterface              0 
+        HID Device Descriptor:
+          bLength                 9
+          bDescriptorType        33
+          bcdHID               1.11
+          bCountryCode            0 Not supported
+          bNumDescriptors         1
+          bDescriptorType        34 Report
+          wDescriptorLength      52
+         Report Descriptors: 
+           ** UNAVAILABLE **
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0008  1x 8 bytes
+        bInterval              10
+Device Status:     0x0000
+  (Bus Powered)
+
+Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         1 Single TT
+  bMaxPacketSize0        64
+  idVendor           0x8087 Intel Corp.
+  idProduct          0x0024 Integrated Rate Matching Hub
+  bcdDevice            0.00
+  iManufacturer           0 
+  iProduct                0 
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           25
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         9 Hub
+      bInterfaceSubClass      0 Unused
+      bInterfaceProtocol      0 Full speed (or root) hub
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0001  1x 1 bytes
+        bInterval              12
+Hub Descriptor:
+  bLength               9
+  bDescriptorType      41
+  nNbrPorts             6
+  wHubCharacteristic 0x0009
+    Per-port power switching
+    Per-port overcurrent protection
+    TT think time 8 FS bits
+  bPwrOn2PwrGood       50 * 2 milli seconds
+  bHubContrCurrent      0 milli Ampere
+  DeviceRemovable    0x00
+  PortPwrCtrlMask    0xff
+ Hub Port Status:
+   Port 1: 0000.0100 power
+   Port 2: 0000.0303 lowspeed power enable connect
+   Port 3: 0000.0103 power enable connect
+   Port 4: 0000.0503 highspeed power enable connect
+   Port 5: 0000.0100 power
+   Port 6: 0000.0100 power
+Device Qualifier (for other device speed):
+  bLength                10
+  bDescriptorType         6
+  bcdUSB               2.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         0 Full speed (or root) hub
+  bMaxPacketSize0        64
+  bNumConfigurations      1
+Device Status:     0x0001
+  Self Powered
+
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         0 Full speed (or root) hub
+  bMaxPacketSize0        64
+  idVendor           0x1d6b Linux Foundation
+  idProduct          0x0002 2.0 root hub
+  bcdDevice            3.11
+  iManufacturer           3 Linux 3.11.0-12-generic ehci_hcd
+  iProduct                2 EHCI Host Controller
+  iSerial                 1 0000:00:1a.0
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           25
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         9 Hub
+      bInterfaceSubClass      0 Unused
+      bInterfaceProtocol      0 Full speed (or root) hub
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0004  1x 4 bytes
+        bInterval              12
+Hub Descriptor:
+  bLength               9
+  bDescriptorType      41
+  nNbrPorts             2
+  wHubCharacteristic 0x000a
+    No power switching (usb 1.0)
+    Per-port overcurrent protection
+  bPwrOn2PwrGood       10 * 2 milli seconds
+  bHubContrCurrent      0 milli Ampere
+  DeviceRemovable    0x02
+  PortPwrCtrlMask    0xff
+ Hub Port Status:
+   Port 1: 0000.0503 highspeed power enable connect
+   Port 2: 0000.0100 power
+Device Status:     0x0001
+  Self Powered
+
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               3.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         3 
+  bMaxPacketSize0         9
+  idVendor           0x1d6b Linux Foundation
+  idProduct          0x0003 3.0 root hub
+  bcdDevice            3.11
+  iManufacturer           3 Linux 3.11.0-12-generic xhci_hcd
+  iProduct                2 xHCI Host Controller
+  iSerial                 1 0000:00:14.0
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           31
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         9 Hub
+      bInterfaceSubClass      0 Unused
+      bInterfaceProtocol      0 Full speed (or root) hub
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0004  1x 4 bytes
+        bInterval              12
+        bMaxBurst               0
+Hub Descriptor:
+  bLength              12
+  bDescriptorType      42
+  nNbrPorts             4
+  wHubCharacteristic 0x000a
+    No power switching (usb 1.0)
+    Per-port overcurrent protection
+  bPwrOn2PwrGood       10 * 2 milli seconds
+  bHubContrCurrent      0 milli Ampere
+  bHubDecLat          0.0 micro seconds
+  wHubDelay             0 nano seconds
+  DeviceRemovable    0x00
+ Hub Port Status:
+   Port 1: 0000.02a0 5Gbps power Rx.Detect
+   Port 2: 0000.02a0 5Gbps power Rx.Detect
+   Port 3: 0000.02a0 5Gbps power Rx.Detect
+   Port 4: 0000.02a0 5Gbps power Rx.Detect
+Binary Object Store Descriptor:
+  bLength                 5
+  bDescriptorType        15
+  wTotalLength           15
+  bNumDeviceCaps          1
+  SuperSpeed USB Device Capability:
+    bLength                10
+    bDescriptorType        16
+    bDevCapabilityType      3
+    bmAttributes         0x00
+    wSpeedsSupported   0x0008
+      Device can operate at SuperSpeed (5Gbps)
+    bFunctionalitySupport   3
+      Lowest fully-functional device speed is SuperSpeed (5Gbps)
+    bU1DevExitLat          10 micro seconds
+    bU2DevExitLat         512 micro seconds
+Device Status:     0x0001
+  Self Powered
+
+Bus 003 Device 002: ID 0bda:5728 Realtek Semiconductor Corp. 
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceSubClass         2 ?
+  bDeviceProtocol         1 Interface Association
+  bMaxPacketSize0        64
+  idVendor           0x0bda Realtek Semiconductor Corp.
+  idProduct          0x5728 
+  bcdDevice            0.09
+  iManufacturer           3 CF0D9RS73
+  iProduct                1 Lenovo EasyCamera
+  iSerial                 2 200901010001
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength          897
+    bNumInterfaces          2
+    bConfigurationValue     1
+    iConfiguration          4 USB Camera
+    bmAttributes         0x80
+      (Bus Powered)
+    MaxPower              500mA
+    Interface Association:
+      bLength                 8
+      bDescriptorType        11
+      bFirstInterface         0
+      bInterfaceCount         2
+      bFunctionClass         14 Video
+      bFunctionSubClass       3 Video Interface Collection
+      bFunctionProtocol       0 
+      iFunction               5 Lenovo EasyCamera
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      1 Video Control
+      bInterfaceProtocol      0 
+      iInterface              5 Lenovo EasyCamera
+      VideoControl Interface Descriptor:
+        bLength                13
+        bDescriptorType        36
+        bDescriptorSubtype      1 (HEADER)
+        bcdUVC               1.00
+        wTotalLength           78
+        dwClockFrequency       15.000000MHz
+        bInCollection           1
+        baInterfaceNr( 0)       1
+      VideoControl Interface Descriptor:
+        bLength                18
+        bDescriptorType        36
+        bDescriptorSubtype      2 (INPUT_TERMINAL)
+        bTerminalID             1
+        wTerminalType      0x0201 Camera Sensor
+        bAssocTerminal          0
+        iTerminal               0 
+        wObjectiveFocalLengthMin      0
+        wObjectiveFocalLengthMax      0
+        wOcularFocalLength            0
+        bControlSize                  3
+        bmControls           0x00000004
+          Auto-Exposure Priority
+      VideoControl Interface Descriptor:
+        bLength                11
+        bDescriptorType        36
+        bDescriptorSubtype      5 (PROCESSING_UNIT)
+      Warning: Descriptor too short
+        bUnitID                 2
+        bSourceID               1
+        wMaxMultiplier          0
+        bControlSize            2
+        bmControls     0x0000043f
+          Brightness
+          Contrast
+          Hue
+          Saturation
+          Sharpness
+          Gamma
+          Power Line Frequency
+        iProcessing             0 
+        bmVideoStandards     0x 9
+          None
+          SECAM - 625/50
+      VideoControl Interface Descriptor:
+        bLength                 9
+        bDescriptorType        36
+        bDescriptorSubtype      3 (OUTPUT_TERMINAL)
+        bTerminalID             3
+        wTerminalType      0x0101 USB Streaming
+        bAssocTerminal          0
+        bSourceID               4
+        iTerminal               0 
+      VideoControl Interface Descriptor:
+        bLength                27
+        bDescriptorType        36
+        bDescriptorSubtype      6 (EXTENSION_UNIT)
+        bUnitID                 4
+        guidExtensionCode         {8ca72912-b447-9440-b0ce-db07386fb938}
+        bNumControl             3
+        bNrPins                 1
+        baSourceID( 0)          2
+        bControlSize            2
+        bmControls( 0)       0x01
+        bmControls( 1)       0x06
+        iExtension              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x83  EP 3 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0010  1x 16 bytes
+        bInterval               6
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       0
+      bNumEndpoints           0
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      VideoStreaming Interface Descriptor:
+        bLength                            16
+        bDescriptorType                    36
+        bDescriptorSubtype                  1 (INPUT_HEADER)
+        bNumFormats                         3
+        wTotalLength                      660
+        bEndPointAddress                  129
+        bmInfo                              0
+        bTerminalLink                       3
+        bStillCaptureMethod                 2
+        bTriggerSupport                     1
+        bTriggerUsage                       0
+        bControlSize                        1
+        bmaControls( 0)                    11
+        bmaControls( 1)                    11
+        bmaControls( 2)                    11
+      VideoStreaming Interface Descriptor:
+        bLength                            11
+        bDescriptorType                    36
+        bDescriptorSubtype                  6 (FORMAT_MJPEG)
+        bFormatIndex                        1
+        bNumFrameDescriptors                5
+        bFlags                              1
+          Fixed-size samples: Yes
+        bDefaultFrameIndex                  1
+        bAspectRatioX                       0
+        bAspectRatioY                       0
+        bmInterlaceFlags                 0x00
+          Interlaced stream or variable: No
+          Fields per frame: 1 fields
+          Field 1 first: No
+          Field pattern: Field 1 only
+          bCopyProtect                      0
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  7 (FRAME_MJPEG)
+        bFrameIndex                         1
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                           1280
+        wHeight                           720
+        dwMinBitRate                221184000
+        dwMaxBitRate                442368000
+        dwMaxVideoFrameBufferSize     1843200
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  7 (FRAME_MJPEG)
+        bFrameIndex                         2
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            160
+        wHeight                           120
+        dwMinBitRate                  4608000
+        dwMaxBitRate                  9216000
+        dwMaxVideoFrameBufferSize       38400
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  7 (FRAME_MJPEG)
+        bFrameIndex                         3
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            320
+        wHeight                           240
+        dwMinBitRate                 18432000
+        dwMaxBitRate                 36864000
+        dwMaxVideoFrameBufferSize      153600
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  7 (FRAME_MJPEG)
+        bFrameIndex                         4
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            640
+        wHeight                           480
+        dwMinBitRate                 73728000
+        dwMaxBitRate                147456000
+        dwMaxVideoFrameBufferSize      614400
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  7 (FRAME_MJPEG)
+        bFrameIndex                         5
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            800
+        wHeight                           600
+        dwMinBitRate                115200000
+        dwMaxBitRate                230400000
+        dwMaxVideoFrameBufferSize      960000
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            10
+        bDescriptorType                    36
+        bDescriptorSubtype                  3 (STILL_IMAGE_FRAME)
+        bEndpointAddress                    0
+        bNumImageSizePatterns               1
+        wWidth( 0)                        640
+        wHeight( 0)                       480
+        bNumCompressionPatterns             1
+      VideoStreaming Interface Descriptor:
+        bLength                             6
+        bDescriptorType                    36
+        bDescriptorSubtype                 13 (COLORFORMAT)
+        bColorPrimaries                     1 (BT.709,sRGB)
+        bTransferCharacteristics            1 (BT.709)
+        bMatrixCoefficients                 4 (SMPTE 170M (BT.601))
+      VideoStreaming Interface Descriptor:
+        bLength                            27
+        bDescriptorType                    36
+        bDescriptorSubtype                  4 (FORMAT_UNCOMPRESSED)
+        bFormatIndex                        2
+        bNumFrameDescriptors                5
+        guidFormat                            {59555932-0000-1000-8000-00aa00389b71}
+        bBitsPerPixel                      16
+        bDefaultFrameIndex                  1
+        bAspectRatioX                       0
+        bAspectRatioY                       0
+        bmInterlaceFlags                 0x00
+          Interlaced stream or variable: No
+          Fields per frame: 2 fields
+          Field 1 first: No
+          Field pattern: Field 1 only
+          bCopyProtect                      0
+      VideoStreaming Interface Descriptor:
+        bLength                            30
+        bDescriptorType                    36
+        bDescriptorSubtype                  5 (FRAME_UNCOMPRESSED)
+        bFrameIndex                         1
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                           1280
+        wHeight                           720
+        dwMinBitRate                117964800
+        dwMaxBitRate                117964800
+        dwMaxVideoFrameBufferSize     1843200
+        dwDefaultFrameInterval        1250000
+        bFrameIntervalType                  1
+        dwFrameInterval( 0)           1250000
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  5 (FRAME_UNCOMPRESSED)
+        bFrameIndex                         2
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            160
+        wHeight                           120
+        dwMinBitRate                  4608000
+        dwMaxBitRate                  9216000
+        dwMaxVideoFrameBufferSize       38400
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  5 (FRAME_UNCOMPRESSED)
+        bFrameIndex                         3
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            320
+        wHeight                           240
+        dwMinBitRate                 18432000
+        dwMaxBitRate                 36864000
+        dwMaxVideoFrameBufferSize      153600
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                  5 (FRAME_UNCOMPRESSED)
+        bFrameIndex                         4
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            640
+        wHeight                           480
+        dwMinBitRate                 73728000
+        dwMaxBitRate                147456000
+        dwMaxVideoFrameBufferSize      614400
+        dwDefaultFrameInterval         333333
+        bFrameIntervalType                  2
+        dwFrameInterval( 0)            333333
+        dwFrameInterval( 1)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            30
+        bDescriptorType                    36
+        bDescriptorSubtype                  5 (FRAME_UNCOMPRESSED)
+        bFrameIndex                         5
+        bmCapabilities                   0x00
+          Still image unsupported
+        wWidth                            800
+        wHeight                           600
+        dwMinBitRate                115200000
+        dwMaxBitRate                115200000
+        dwMaxVideoFrameBufferSize      960000
+        dwDefaultFrameInterval         666666
+        bFrameIntervalType                  1
+        dwFrameInterval( 0)            666666
+      VideoStreaming Interface Descriptor:
+        bLength                            10
+        bDescriptorType                    36
+        bDescriptorSubtype                  3 (STILL_IMAGE_FRAME)
+        bEndpointAddress                    0
+        bNumImageSizePatterns               1
+        wWidth( 0)                        640
+        wHeight( 0)                       480
+        bNumCompressionPatterns             1
+      VideoStreaming Interface Descriptor:
+        bLength                             6
+        bDescriptorType                    36
+        bDescriptorSubtype                 13 (COLORFORMAT)
+        bColorPrimaries                     1 (BT.709,sRGB)
+        bTransferCharacteristics            1 (BT.709)
+        bMatrixCoefficients                 4 (SMPTE 170M (BT.601))
+      VideoStreaming Interface Descriptor:
+        bLength                            56
+        bDescriptorType                    36
+        bDescriptorSubtype                 14         Invalid desc subtype: 03 05 4d 34 32 30 00 00 10 00 80 00 00 aa 00 38 9b 71 32 56 55 59 00 00 10 00 80 00 00 aa 00 38 9b 71 33 56 55 59 00 00 10 00 80 00 00 aa 00 38 9b 71 00 01 00
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                 15         Invalid desc subtype: 01 00 00 05 d0 02 00 00 65 04 00 00 ab 09 00 20 1c 00 22 df 0d 00 02 22 df 0d 00 80 84 1e 00
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                 15         Invalid desc subtype: 02 00 a0 00 78 00 00 50 46 00 00 a0 8c 00 00 96 00 00 15 16 05 00 02 15 16 05 00 2a 2c 0a 00
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                 15         Invalid desc subtype: 03 00 40 01 f0 00 00 40 19 01 00 80 32 02 00 58 02 00 15 16 05 00 02 15 16 05 00 2a 2c 0a 00
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                 15         Invalid desc subtype: 04 00 80 02 e0 01 00 00 65 04 00 00 ca 08 00 60 09 00 15 16 05 00 02 15 16 05 00 2a 2c 0a 00
+      VideoStreaming Interface Descriptor:
+        bLength                            34
+        bDescriptorType                    36
+        bDescriptorSubtype                 15         Invalid desc subtype: 05 00 20 03 58 02 00 d0 dd 06 00 a0 bb 0d 00 a6 0e 00 15 16 05 00 02 15 16 05 00 2a 2c 0a 00
+      VideoStreaming Interface Descriptor:
+        bLength                            10
+        bDescriptorType                    36
+        bDescriptorSubtype                  3 (STILL_IMAGE_FRAME)
+        bEndpointAddress                    0
+        bNumImageSizePatterns               1
+        wWidth( 0)                        640
+        wHeight( 0)                       480
+        bNumCompressionPatterns             1
+      VideoStreaming Interface Descriptor:
+        bLength                             6
+        bDescriptorType                    36
+        bDescriptorSubtype                 13 (COLORFORMAT)
+        bColorPrimaries                     1 (BT.709,sRGB)
+        bTransferCharacteristics            1 (BT.709)
+        bMatrixCoefficients                 4 (SMPTE 170M (BT.601))
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       1
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x0080  1x 128 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       2
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x0200  1x 512 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       3
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x0400  1x 1024 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       4
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x0b00  2x 768 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       5
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x0c00  2x 1024 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       6
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x1380  3x 896 bytes
+        bInterval               1
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        1
+      bAlternateSetting       7
+      bNumEndpoints           1
+      bInterfaceClass        14 Video
+      bInterfaceSubClass      2 Video Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            5
+          Transfer Type            Isochronous
+          Synch Type               Asynchronous
+          Usage Type               Data
+        wMaxPacketSize     0x1400  3x 1024 bytes
+        bInterval               1
+Device Qualifier (for other device speed):
+  bLength                10
+  bDescriptorType         6
+  bcdUSB               2.00
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceSubClass         2 ?
+  bDeviceProtocol         1 Interface Association
+  bMaxPacketSize0        64
+  bNumConfigurations      1
+Device Status:     0x0000
+  (Bus Powered)
+
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 Unused
+  bDeviceProtocol         1 Single TT
+  bMaxPacketSize0        64
+  idVendor           0x1d6b Linux Foundation
+  idProduct          0x0002 2.0 root hub
+  bcdDevice            3.11
+  iManufacturer           3 Linux 3.11.0-12-generic xhci_hcd
+  iProduct                2 xHCI Host Controller
+  iSerial                 1 0000:00:14.0
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           25
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0xe0
+      Self Powered
+      Remote Wakeup
+    MaxPower                0mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         9 Hub
+      bInterfaceSubClass      0 Unused
+      bInterfaceProtocol      0 Full speed (or root) hub
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0004  1x 4 bytes
+        bInterval              12
+Hub Descriptor:
+  bLength               9
+  bDescriptorType      41
+  nNbrPorts             4
+  wHubCharacteristic 0x000a
+    No power switching (usb 1.0)
+    Per-port overcurrent protection
+    TT think time 8 FS bits
+  bPwrOn2PwrGood       10 * 2 milli seconds
+  bHubContrCurrent      0 milli Ampere
+  DeviceRemovable    0x00
+  PortPwrCtrlMask    0xff
+ Hub Port Status:
+   Port 1: 0000.0100 power
+   Port 2: 0000.0100 power
+   Port 3: 0000.0100 power
+   Port 4: 0000.0503 highspeed power enable connect
+Device Status:     0x0001
+  Self Powered
+
+
+----------------------	/proc/cpuinfo	----------------------
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 1200.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 2101.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 1200.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 1200.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 1200.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 1200.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 1200.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 1200.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4190.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+----------------------	/proc/meminfo	----------------------
+
+MemTotal:        8072516 kB
+MemFree:         6156876 kB
+Buffers:          112092 kB
+Cached:           909816 kB
+SwapCached:            0 kB
+Active:          1022168 kB
+Inactive:         662656 kB
+Active(anon):     664292 kB
+Inactive(anon):   156732 kB
+Active(file):     357876 kB
+Inactive(file):   505924 kB
+Unevictable:          16 kB
+Mlocked:              16 kB
+SwapTotal:       1500156 kB
+SwapFree:        1500156 kB
+Dirty:                96 kB
+Writeback:             0 kB
+AnonPages:        663212 kB
+Mapped:           183440 kB
+Shmem:            158116 kB
+Slab:             117180 kB
+SReclaimable:      86260 kB
+SUnreclaim:        30920 kB
+KernelStack:        3624 kB
+PageTables:        23816 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     5536412 kB
+Committed_AS:    2699184 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      425320 kB
+VmallocChunk:   34359304156 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       89336 kB
+DirectMap2M:     8198144 kB
